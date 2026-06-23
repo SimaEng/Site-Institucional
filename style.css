@@ -1122,7 +1122,7 @@ html.is-route-changing .route-view {
 
 .full-text-heading {
   display: grid;
-  grid-template-columns: 45px 1fr auto;
+  grid-template-columns: 45px 1fr;
   gap: 20px;
   align-items: start;
   transition: transform .5s var(--ease);
@@ -1166,36 +1166,7 @@ html.is-route-changing .route-view {
   letter-spacing: -.045em;
 }
 
-.full-text-heading > a {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  transition:
-    background .45s var(--ease),
-    color .4s var(--ease),
-    border-color .4s var(--ease),
-    box-shadow .45s var(--ease),
-    transform .5s var(--ease);
-}
 
-.full-text-card:hover .full-text-heading > a {
-  border-color: var(--blue-800);
-  background: var(--blue-800);
-  color: var(--white);
-  box-shadow: 0 10px 24px rgba(21,65,128,.16);
-  transform: translateX(3px) rotate(-2deg);
-}
-
-.full-text-heading > a i {
-  transition: transform .45s var(--ease);
-}
-
-.full-text-card:hover .full-text-heading > a i {
-  transform: translateX(2px);
-}
 
 .article-page-header {
   padding: calc(var(--header-height) + 90px) 0 90px;
@@ -3449,13 +3420,9 @@ html.is-route-changing .route-view {
   }
 
   .full-text-heading {
-    grid-template-columns: 32px 1fr auto;
+    grid-template-columns: 32px 1fr;
     align-items: center;
     gap: 16px;
-  }
-
-  .full-text-heading > a {
-    margin-top: 0;
   }
 
   .article-page-shell,
