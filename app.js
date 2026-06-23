@@ -266,7 +266,7 @@ const visualMark = `
     <div class="visual-ring visual-ring-large"></div>
     <div class="visual-ring visual-ring-small"></div>
     <div class="visual-card">
-      <img src="logo-so-img.png" alt="" width="392" height="479">
+      <img src="logo-so-img.png" alt="Logotipo Sima Engenharia" width="392" height="479">
       <p>Engenharia feita<br>por pessoas.</p>
     </div>
     <div class="visual-label visual-label-top"><i class="ri-draft-line"></i>Pensar</div>
@@ -298,12 +298,12 @@ const articleCards = (items = articles) => items.map((article) => `
   </a>
 `).join("");
 
-const renderContentBlocks = (content) => content.map((block) => {
+const renderContentBlocks = (content, isPreview = false) => content.map((block) => {
   if (typeof block === "string") return `<p>${block}</p>`;
   if (block.type === "heading") return `<h2>${block.text}</h2>`;
   if (block.type === "lead") return `<p class="article-lead">${block.text}</p>`;
   if (block.type === "statement") return `<blockquote>${block.text}</blockquote>`;
-  if (block.type === "cta") return `<a class="button article-content-cta" href="${block.href}">${block.text}<i class="ri-arrow-right-line" aria-hidden="true"></i></a>`;
+  if (block.type === "cta") return isPreview ? "" : `<a class="button article-content-cta" href="${block.href}">${block.text}<i class="ri-arrow-right-line" aria-hidden="true"></i></a>`;
   if (block.type === "features") {
     return `<div class="article-feature-grid">${block.items.map((item) => `
       <section class="article-feature">
@@ -334,7 +334,7 @@ const fullTextBlock = (article) => `
       </div>
     </div>
     <div class="full-text-copy">
-      ${renderContentBlocks(article.content)}
+      ${renderContentBlocks(article.content, true)}
       <div class="full-text-read-more" style="margin-top: 32px;">
         <a class="button contact-button" href="#/artigo/${article.id}">Ler artigo completo <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
       </div>
@@ -538,7 +538,7 @@ const templates = {
             </article>
             <article class="expertise-item reveal" data-expertise>
               <button id="expertise-industries-button" type="button" aria-expanded="false" aria-controls="expertise-industries-panel"><i class="ri-focus-3-line expertise-icon" aria-hidden="true"></i><span class="expertise-name">Engenharia Necessária</span><i class="ri-add-line expertise-toggle" aria-hidden="true"></i></button>
-              <div class="expertise-panel" id="expertise-industries-panel" role="region" aria-labelledby="expertise-industries-button" aria-hidden="true"><div><p>Sistema integrado de desenvolvimento, decisão e gestão que aplica a engenharia com a profundidade necessária em cada fase.</p><ul><li><i class="ri-check-line"></i>Engenharia conceitual e orçamentação</li><li><i class="ri-check-line"></i>Viabilidade técnico-econômica e definição de escopo</li><li><i class="ri-check-line"></i>Coerência entre engenharia básica e detalhada</li><li><i class="ri-check-line"></i>Eficiência, previsibilidade e controle de riscos</li></ul><a class="expertise-more" href="#/artigo/engenharia-necessaria">Entenda a Engenharia Necessária <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-field" aria-hidden="true"><span></span><span></span><span></span></div></div>
+              <div class="expertise-panel" id="expertise-industries-panel" role="region" aria-labelledby="expertise-industries-button" aria-hidden="true"><div><p>Sistema integrado de desenvolvimento, decisão e gestão que aplica a engenharia com a profundidade necessária em cada fase.</p><ul><li><i class="ri-check-line"></i>Engenharia conceitual e orçamentação</li><li><i class="ri-check-line"></i>Viabilidade técnico-econômica e definição de escopo</li><li><i class="ri-check-line"></i>Coerência entre engenharia básica e detalhada</li><li><i class="ri-check-line"></i>Eficiência, previsibilidade e controle de riscos</li></ul><a class="expertise-more" href="#/artigo/engenharia-necessaria">Entenda a Engenharia Necessária <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-field" aria-hidden="true"><div class="venn-wrapper"><span></span><span></span><span></span></div></div></div>
             </article>
           </div>
         </div>
@@ -552,10 +552,10 @@ const templates = {
     `;
   },
 
-  "nossa-forma": () => {
+  "nossa-cultura": () => {
     const peopleArticles = articles.filter((article) => article.category !== "engenharia");
     return `
-      ${pageHero("Nossa forma", "Tecnologia é ferramenta.<br><em>Pessoas são a essência.</em>", "Segurança, confiança, diversidade, escuta e desenvolvimento humano.")}
+      ${pageHero("Nossa cultura", "Tecnologia é ferramenta.<br><em>Pessoas são a essência.</em>", "Segurança, confiança, diversidade, escuta e desenvolvimento humano.")}
       <section class="section approach">
         <div class="section-shell">
           <div class="approach-title-row">
@@ -642,11 +642,13 @@ const templates = {
             <p>Compartilhe o contexto do projeto, a fase atual, as disciplinas envolvidas e os resultados esperados. Nossa equipe poderá avaliar a melhor forma de apoiar sua empresa.</p>
             <div class="client-actions">
               <a class="button contact-button" href="mailto:simaeng@simaeng.com.br?subject=Contato%20comercial%20-%20Projeto%20industrial">Enviar e-mail comercial <i class="ri-mail-send-line" aria-hidden="true"></i></a>
+              <a class="button contact-button-wa" href="https://wa.me/551125062970" target="_blank" rel="noopener noreferrer">Conversar no WhatsApp <i class="ri-whatsapp-line" aria-hidden="true"></i></a>
               <a class="text-link" href="tel:+551125062970">Ligar: 11.2506-2970 <i class="ri-phone-line" aria-hidden="true"></i></a>
             </div>
           </div>
           <aside class="contact-info-panel contact-info-client reveal">
             <div><span>E-mail comercial</span><a href="mailto:simaeng@simaeng.com.br">simaeng@simaeng.com.br</a></div>
+            <div><span>WhatsApp</span><a href="https://wa.me/551125062970" target="_blank" rel="noopener noreferrer">+55 11 2506-2970</a></div>
             <div><span>Telefone</span><a href="tel:+551125062970">+55 11 2506-2970</a></div>
             <div><span>Escritório</span><address>Rua Ouvidor Peleja nº 772<br>Vila Mariana — São Paulo / SP — Brasil</address></div>
           </aside>
@@ -726,15 +728,15 @@ const parseRoute = () => {
 
 const setTitle = (route, article) => {
   const names = {
-    inicio: "Sima Engenharia — Mãos ao futuro",
-    sima: "Quem somos — Sima Engenharia",
-    atuacao: "Atuação — Sima Engenharia",
-    "nossa-forma": "Nossa forma — Sima Engenharia",
-    conteudos: "Nossos conteúdos — Sima Engenharia",
-    contato: "Fale conosco — Contato comercial",
-    carreiras: "Trabalhe conosco — Carreiras"
+    inicio: "SIMA Engenharia: projetos industriais, engenharia básica, detalhamento e gerenciamento de implantação",
+    sima: "Quem somos — SIMA Engenharia",
+    atuacao: "Engenharia de projetos industriais: do estudo de viabilidade ao detalhamento — SIMA",
+    "nossa-cultura": "Nossa cultura — SIMA Engenharia",
+    conteudos: "Nossos conteúdos — SIMA Engenharia",
+    contato: "Fale conosco — SIMA Engenharia",
+    carreiras: "Trabalhe conosco — SIMA Engenharia"
   };
-  document.title = article ? `${article.title} — Sima Engenharia` : names[route] || names.inicio;
+  document.title = article ? `${article.title} — SIMA Engenharia` : names[route] || names.inicio;
 };
 
 const closeMenu = () => {

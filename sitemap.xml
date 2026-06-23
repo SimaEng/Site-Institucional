@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.simaeng.com.br/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.simaeng.com.br/sima</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.simaeng.com.br/atuacao</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.simaeng.com.br/nossa-cultura</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.simaeng.com.br/conteudos</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.simaeng.com.br/carreiras</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.simaeng.com.br/contato</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>
