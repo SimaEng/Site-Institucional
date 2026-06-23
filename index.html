@@ -9,6 +9,23 @@
   <link rel="icon" type="image/png" href="logo-so-img.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+    (function(l) {
+      if (l.search[1] === 'p' && l.search[2] === '=') {
+        var a = l.search.slice(1).split('&').map(function(s) { return s.replace(/~and~/g, '&') });
+        var param = a.find(function(s) { return s.indexOf('p=') === 0 });
+        if (param) {
+          var path = param.substring(2);
+          var qParams = a.filter(function(s) { return s.indexOf('p=') !== 0 && s.indexOf('q=') !== 0 });
+          var querySearch = a.find(function(s) { return s.indexOf('q=') === 0 });
+          var query = querySearch ? '?' + querySearch.substring(2) : (qParams.length ? '?' + qParams.join('&') : '');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + path + query + l.hash
+          );
+        }
+      }
+    }(window.location));
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#app">Ir para o conteúdo</a>

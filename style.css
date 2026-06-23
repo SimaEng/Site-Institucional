@@ -405,7 +405,7 @@ h2 em {
 }
 
 .button,
-.tag {
+.text-link {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
