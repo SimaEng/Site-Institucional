@@ -9,42 +9,25 @@
   <link rel="icon" type="image/png" href="logo-so-img.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript">
-    (function(l) {
-      if (l.search[1] === 'p' && l.search[2] === '=') {
-        var a = l.search.slice(1).split('&').map(function(s) { return s.replace(/~and~/g, '&') });
-        var param = a.find(function(s) { return s.indexOf('p=') === 0 });
-        if (param) {
-          var path = param.substring(2);
-          var qParams = a.filter(function(s) { return s.indexOf('p=') !== 0 && s.indexOf('q=') !== 0 });
-          var querySearch = a.find(function(s) { return s.indexOf('q=') === 0 });
-          var query = querySearch ? '?' + querySearch.substring(2) : (qParams.length ? '?' + qParams.join('&') : '');
-          window.history.replaceState(null, null,
-            l.pathname.slice(0, -1) + path + query + l.hash
-          );
-        }
-      }
-    }(window.location));
-  </script>
 </head>
 <body>
   <a class="skip-link" href="#app">Ir para o conteúdo</a>
 
   <header class="site-header" data-header>
     <div class="header-shell">
-      <a class="brand" href="/inicio" aria-label="Sima Engenharia — página inicial">
+      <a class="brand" href="#/inicio" aria-label="Sima Engenharia — página inicial">
         <img src="logo-sima-com-texto.png" alt="Sima — mãos ao futuro" width="1044" height="479">
       </a>
 
       <nav class="desktop-nav" aria-label="Navegação principal">
-        <a href="/sima" data-nav="sima">Quem somos</a>
-        <a href="/atuacao" data-nav="atuacao">Atuação</a>
-        <a href="/nossa-forma" data-nav="nossa-forma">Nossa forma</a>
-        <a href="/conteudos" data-nav="conteudos">Conteúdos</a>
-        <a href="/carreiras" data-nav="carreiras">Carreiras</a>
+        <a href="#/sima" data-nav="sima">Quem somos</a>
+        <a href="#/atuacao" data-nav="atuacao">Atuação</a>
+        <a href="#/nossa-forma" data-nav="nossa-forma">Nossa forma</a>
+        <a href="#/conteudos" data-nav="conteudos">Conteúdos</a>
+        <a href="#/carreiras" data-nav="carreiras">Carreiras</a>
       </nav>
 
-      <a class="header-cta" href="/contato" data-nav="contato">
+      <a class="header-cta" href="#/contato" data-nav="contato">
         Fale conosco
         <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
       </a>
@@ -55,13 +38,13 @@
     </div>
 
     <nav class="mobile-nav" id="mobile-menu" aria-label="Navegação móvel" aria-hidden="true">
-      <a href="/inicio" data-nav="inicio">Início</a>
-      <a href="/sima" data-nav="sima">Quem somos</a>
-      <a href="/atuacao" data-nav="atuacao">Atuação</a>
-      <a href="/nossa-forma" data-nav="nossa-forma">Nossa forma</a>
-      <a href="/conteudos" data-nav="conteudos">Conteúdos</a>
-      <a href="/contato" data-nav="contato">Fale sobre um projeto</a>
-      <a href="/carreiras" data-nav="carreiras">Trabalhe conosco</a>
+      <a href="#/inicio" data-nav="inicio">Início</a>
+      <a href="#/sima" data-nav="sima">Quem somos</a>
+      <a href="#/atuacao" data-nav="atuacao">Atuação</a>
+      <a href="#/nossa-forma" data-nav="nossa-forma">Nossa forma</a>
+      <a href="#/conteudos" data-nav="conteudos">Conteúdos</a>
+      <a href="#/contato" data-nav="contato">Fale sobre um projeto</a>
+      <a href="#/carreiras" data-nav="carreiras">Trabalhe conosco</a>
     </nav>
   </header>
 
@@ -71,7 +54,7 @@
     <div class="footer-shell">
       <div class="footer-lead">
         <p class="footer-kicker"><span></span>Mãos ao futuro</p>
-        <a href="/contato">
+        <a href="#/contato">
           <strong>Tem um desafio industrial?</strong>
           <span>Vamos conversar <i class="ri-arrow-right-line" aria-hidden="true"></i></span>
         </a>
@@ -79,7 +62,7 @@
 
       <div class="footer-main">
         <div class="footer-identity">
-          <a class="footer-brand" href="/inicio" aria-label="Sima Engenharia — voltar ao início">
+          <a class="footer-brand" href="#/inicio" aria-label="Sima Engenharia — voltar ao início">
             <img src="logo-sima-com-texto.png" alt="Sima — mãos ao futuro" width="1044" height="479">
           </a>
           <p>Engenharia industrial feita por pessoas, conhecimento de campo e relações de confiança.</p>
@@ -88,19 +71,19 @@
 
         <nav class="footer-nav" aria-label="Navegação do rodapé">
           <span>Explore</span>
-          <a href="/sima">Quem somos</a>
-          <a href="/atuacao">Atuação</a>
-          <a href="/nossa-forma">Nossa forma</a>
-          <a href="/conteudos">Conteúdos</a>
+          <a href="#/sima">Quem somos</a>
+          <a href="#/atuacao">Atuação</a>
+          <a href="#/nossa-forma">Nossa forma</a>
+          <a href="#/conteudos">Conteúdos</a>
         </nav>
 
         <div class="footer-channels">
           <span>Canais</span>
-          <a href="/contato">
+          <a href="#/contato">
             <i class="ri-building-line" aria-hidden="true"></i>
             <span><small>Para empresas</small>Fale sobre um projeto</span>
           </a>
-          <a href="/carreiras">
+          <a href="#/carreiras">
             <i class="ri-user-search-line" aria-hidden="true"></i>
             <span><small>Para profissionais</small>Trabalhe conosco</span>
           </a>
@@ -122,7 +105,7 @@
       <div class="footer-bottom">
         <p>© <span data-year></span> Sima Engenharia. Todos os direitos reservados.</p>
         <p>São Paulo · Brasil</p>
-        <a href="/inicio" aria-label="Voltar ao início">Voltar ao topo <i class="ri-arrow-up-line" aria-hidden="true"></i></a>
+        <a href="#/inicio" aria-label="Voltar ao início">Voltar ao topo <i class="ri-arrow-up-line" aria-hidden="true"></i></a>
       </div>
     </div>
   </footer>

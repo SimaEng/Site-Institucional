@@ -288,7 +288,7 @@ const pageHero = (eyebrow, title, description) => `
 `;
 
 const articleCards = (items = articles) => items.map((article) => `
-  <a class="insight-card reveal" href="/artigo/${article.id}">
+  <a class="insight-card reveal" href="#/artigo/${article.id}">
     <div class="insight-top">
       <span class="insight-category">${article.categoryLabel}</span>
     </div>
@@ -336,7 +336,7 @@ const fullTextBlock = (article) => `
     <div class="full-text-copy">
       ${renderContentBlocks(article.content)}
       <div class="full-text-read-more" style="margin-top: 32px;">
-        <a class="button contact-button" href="/artigo/${article.id}">Ler artigo completo <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+        <a class="button contact-button" href="#/artigo/${article.id}">Ler artigo completo <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
       </div>
     </div>
   </article>
@@ -357,8 +357,8 @@ const templates = {
             Da viabilidade à implantação, unimos engenharia, gestão e experiência de campo para transformar desafios industriais em instalações seguras, produtivas e sustentáveis.
           </p>
           <div class="hero-actions">
-            <a class="button button-light" href="/atuacao">Conheça nossa atuação <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
-            <a class="text-link text-link-light" href="/sima">Conheça nossa história <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+            <a class="button button-light" href="#/atuacao">Conheça nossa atuação <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+            <a class="text-link text-link-light" href="#/sima">Conheça nossa história <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
           </div>
         </div>
         ${visualMark}
@@ -421,7 +421,7 @@ const templates = {
         </div>
         <div class="home-service-detail reveal">
           <p>Aplicamos a engenharia com a profundidade adequada em cada fase, da identificação das necessidades à implantação, para reduzir riscos, otimizar investimentos e aumentar a previsibilidade dos resultados.</p>
-          <a class="button button-light" href="/artigo/engenharia-necessaria">Entenda o conceito <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+          <a class="button button-light" href="#/artigo/engenharia-necessaria">Entenda o conceito <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
@@ -432,13 +432,13 @@ const templates = {
           <p class="eyebrow"><span></span>Desde 1991</p>
           <h2>Uma trajetória construída junto à indústria.</h2>
           <p class="home-cta-copy">Começamos com planejamento de manutenção e evoluímos para uma atuação multidisciplinar em elaboração de projetos e gerenciamento de implantações.</p>
-          <a class="text-link" href="/sima">Conheça nossa história <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+          <a class="text-link" href="#/sima">Conheça nossa história <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </div>
         <div class="reveal">
           <p class="eyebrow"><span></span>Experiência sem fronteiras</p>
           <h2>Projetos nacionais e internacionais.</h2>
           <p class="home-cta-copy">Apoiamos diferentes setores industriais com Engenharia Necessária, rastreabilidade técnica e soluções que consideram os efeitos de cada decisão.</p>
-          <a class="text-link" href="/atuacao">Veja onde atuamos <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+          <a class="text-link" href="#/atuacao">Veja onde atuamos <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
@@ -505,15 +505,15 @@ const templates = {
           <div class="expertise-list">
             <article class="expertise-item reveal" data-expertise>
               <button id="expertise-projects-button" type="button" aria-expanded="true" aria-controls="expertise-projects-panel"><i class="ri-draft-line expertise-icon" aria-hidden="true"></i><span class="expertise-name">Projetos Industriais</span><i class="ri-subtract-line expertise-toggle" aria-hidden="true"></i></button>
-              <div class="expertise-panel" id="expertise-projects-panel" role="region" aria-labelledby="expertise-projects-button"><div><p>Engenharia multidisciplinar para viabilizar, projetar e implementar empreendimentos industriais.</p><ul><li><i class="ri-check-line"></i>Viabilidade e concepção técnica</li><li><i class="ri-check-line"></i>Definição tecnológica</li><li><i class="ri-check-line"></i>Projetos multidisciplinares integrados</li><li><i class="ri-check-line"></i>Integração com implantação</li></ul><a class="expertise-more" href="/artigo/projetos-industriais">Conheça nossa atuação em projetos <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-projects" aria-hidden="true"><span></span><span></span><span></span></div></div>
+              <div class="expertise-panel" id="expertise-projects-panel" role="region" aria-labelledby="expertise-projects-button"><div><p>Engenharia multidisciplinar para viabilizar, projetar e implementar empreendimentos industriais.</p><ul><li><i class="ri-check-line"></i>Viabilidade e concepção técnica</li><li><i class="ri-check-line"></i>Definição tecnológica</li><li><i class="ri-check-line"></i>Projetos multidisciplinares integrados</li><li><i class="ri-check-line"></i>Integração com implantação</li></ul><a class="expertise-more" href="#/artigo/projetos-industriais">Conheça nossa atuação em projetos <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-projects" aria-hidden="true"><span></span><span></span><span></span></div></div>
             </article>
             <article class="expertise-item reveal" data-expertise>
               <button id="expertise-management-button" type="button" aria-expanded="false" aria-controls="expertise-management-panel"><i class="ri-settings-4-line expertise-icon" aria-hidden="true"></i><span class="expertise-name">Gerenciamento de Projetos</span><i class="ri-add-line expertise-toggle" aria-hidden="true"></i></button>
-              <div class="expertise-panel" id="expertise-management-panel" role="region" aria-labelledby="expertise-management-button" aria-hidden="true"><div><p>Gestão aplicada na medida certa para conectar engenharia, suprimentos, execução e tomada de decisão.</p><ul><li><i class="ri-check-line"></i>Planejar escopo, estratégias e cronogramas</li><li><i class="ri-check-line"></i>Desenvolver e integrar as frentes do projeto</li><li><i class="ri-check-line"></i>Controlar prazo, CAPEX, qualidade e documentação</li><li><i class="ri-check-line"></i>Agir em campo e tratar desvios</li></ul><a class="expertise-more" href="/artigo/gerenciamento-e-controle-de-implantacao-de-projetos-industriais">Veja nossa abordagem de gestão <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-management" aria-hidden="true"><span></span><span></span><span></span><span></span></div></div>
+              <div class="expertise-panel" id="expertise-management-panel" role="region" aria-labelledby="expertise-management-button" aria-hidden="true"><div><p>Gestão aplicada na medida certa para conectar engenharia, suprimentos, execução e tomada de decisão.</p><ul><li><i class="ri-check-line"></i>Planejar escopo, estratégias e cronogramas</li><li><i class="ri-check-line"></i>Desenvolver e integrar as frentes do projeto</li><li><i class="ri-check-line"></i>Controlar prazo, CAPEX, qualidade e documentação</li><li><i class="ri-check-line"></i>Agir em campo e tratar desvios</li></ul><a class="expertise-more" href="#/artigo/gerenciamento-e-controle-de-implantacao-de-projetos-industriais">Veja nossa abordagem de gestão <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-management" aria-hidden="true"><span></span><span></span><span></span><span></span></div></div>
             </article>
             <article class="expertise-item reveal" data-expertise>
               <button id="expertise-industries-button" type="button" aria-expanded="false" aria-controls="expertise-industries-panel"><i class="ri-focus-3-line expertise-icon" aria-hidden="true"></i><span class="expertise-name">Engenharia Necessária</span><i class="ri-add-line expertise-toggle" aria-hidden="true"></i></button>
-              <div class="expertise-panel" id="expertise-industries-panel" role="region" aria-labelledby="expertise-industries-button" aria-hidden="true"><div><p>Sistema integrado de desenvolvimento, decisão e gestão que aplica a engenharia com a profundidade necessária em cada fase.</p><ul><li><i class="ri-check-line"></i>Engenharia conceitual e orçamentação</li><li><i class="ri-check-line"></i>Viabilidade técnico-econômica e definição de escopo</li><li><i class="ri-check-line"></i>Coerência entre engenharia básica e detalhada</li><li><i class="ri-check-line"></i>Eficiência, previsibilidade e controle de riscos</li></ul><a class="expertise-more" href="/artigo/engenharia-necessaria">Entenda a Engenharia Necessária <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-field" aria-hidden="true"><span></span><span></span><span></span></div></div>
+              <div class="expertise-panel" id="expertise-industries-panel" role="region" aria-labelledby="expertise-industries-button" aria-hidden="true"><div><p>Sistema integrado de desenvolvimento, decisão e gestão que aplica a engenharia com a profundidade necessária em cada fase.</p><ul><li><i class="ri-check-line"></i>Engenharia conceitual e orçamentação</li><li><i class="ri-check-line"></i>Viabilidade técnico-econômica e definição de escopo</li><li><i class="ri-check-line"></i>Coerência entre engenharia básica e detalhada</li><li><i class="ri-check-line"></i>Eficiência, previsibilidade e controle de riscos</li></ul><a class="expertise-more" href="#/artigo/engenharia-necessaria">Entenda a Engenharia Necessária <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-field" aria-hidden="true"><span></span><span></span><span></span></div></div>
             </article>
           </div>
         </div>
@@ -545,8 +545,8 @@ const templates = {
                 <h3>A vida é um valor inegociável.</h3>
                 <p>Instalações seguras na construção e na operação. Bem-estar físico e psicológico como compromisso coletivo.</p>
                 <div class="approach-links">
-                  <a href="/artigo/seguranca">Conheça nossa visão sobre segurança <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
-                  <a href="/artigo/pausa-seguranca">Veja a Pausa Para Segurança <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                  <a href="#/artigo/seguranca">Conheça nossa visão sobre segurança <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                  <a href="#/artigo/pausa-seguranca">Veja a Pausa Para Segurança <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
                 </div>
               </div>
             </article>
@@ -556,7 +556,7 @@ const templates = {
               <h3>Antes da resposta, compreender.</h3>
               <p>A escuta amplia o diálogo, aproxima expectativas e transforma informação em decisões mais consistentes.</p>
               <div class="approach-links">
-                <a href="/artigo/tempo-de-escutar">Leia “Tempo de Escutar” <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                <a href="#/artigo/tempo-de-escutar">Leia “Tempo de Escutar” <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
               </div>
             </article>
             <article class="approach-card reveal">
@@ -565,7 +565,7 @@ const templates = {
               <h3>Competência técnica e formação humana.</h3>
               <p>O Programa Ampliando Competências apoia escolhas de desenvolvimento feitas pelas próprias pessoas do time.</p>
               <div class="approach-links">
-                <a href="/artigo/programa-ampliando-competencias-acp">Conheça o Programa ACP <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                <a href="#/artigo/programa-ampliando-competencias-acp">Conheça o Programa ACP <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
               </div>
             </article>
             <article class="approach-card reveal">
@@ -574,8 +574,8 @@ const templates = {
               <h3>Respeito aos pactos e às pessoas.</h3>
               <p>Informações disponíveis e decisões transparentes, respeitando individualidades e particularidades.</p>
               <div class="approach-links">
-                <a href="/artigo/lacos-de-confianca">Leia “Laços de Confiança” <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
-                <a href="/artigo/alinhamento-de-percepcoes">Entenda o Alinhamento de Percepções <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                <a href="#/artigo/lacos-de-confianca">Leia “Laços de Confiança” <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                <a href="#/artigo/alinhamento-de-percepcoes">Entenda o Alinhamento de Percepções <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
               </div>
             </article>
           </div>
@@ -632,7 +632,7 @@ const templates = {
         </div>
         <div class="route-separator reveal">
           <div><span>Você está procurando emprego?</span><strong>Currículos não devem ser enviados ao canal comercial.</strong></div>
-          <a class="button route-button" href="/carreiras">Ir para Trabalhe conosco <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+          <a class="button route-button" href="#/carreiras">Ir para Trabalhe conosco <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
@@ -664,7 +664,7 @@ const templates = {
         </div>
         <div class="route-separator route-separator-client reveal">
           <div><span>Você representa uma empresa?</span><strong>Solicitações comerciais possuem um canal exclusivo.</strong></div>
-          <a class="button route-button" href="/contato">Ir para o contato comercial <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+          <a class="button route-button" href="#/contato">Ir para o contato comercial <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
@@ -675,7 +675,7 @@ const articleTemplate = (article) => `
   <article class="article-page">
     <header class="article-page-header">
       <div class="article-page-shell">
-        <a class="article-back" href="/conteudos"><i class="ri-arrow-left-line" aria-hidden="true"></i> Todos os conteúdos</a>
+        <a class="article-back" href="#/conteudos"><i class="ri-arrow-left-line" aria-hidden="true"></i> Todos os conteúdos</a>
         <div class="article-meta"><span>${article.categoryLabel}</span></div>
         <h1>${article.title}</h1>
         ${article.tagline ? `<p class="article-tagline">${article.tagline}</p>` : ""}
@@ -686,19 +686,19 @@ const articleTemplate = (article) => `
         ${renderContentBlocks(article.content)}
         <footer class="article-signature">
           <span>Sima Engenharia</span>
-          <a href="/contato">Fale sobre um projeto <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+          <a href="#/contato">Fale sobre um projeto <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </footer>
       </div>
       <aside class="article-aside">
         <span>Continue lendo</span>
-        ${articles.filter((item) => item.id !== article.id).slice(0, 3).map((item) => `<a href="/artigo/${item.id}">${item.title}<i class="ri-arrow-right-line" aria-hidden="true"></i></a>`).join("")}
+        ${articles.filter((item) => item.id !== article.id).slice(0, 3).map((item) => `<a href="#/artigo/${item.id}">${item.title}<i class="ri-arrow-right-line" aria-hidden="true"></i></a>`).join("")}
       </aside>
     </div>
   </article>
 `;
 
 const parseRoute = () => {
-  const raw = location.pathname.replace(/^\//, "") || "inicio";
+  const raw = location.hash.replace(/^#\//, "") || "inicio";
   const [route, param] = raw.split("/");
   return { route, param };
 };
@@ -885,12 +885,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.addEventListener("click", (event) => {
-  const link = event.target.closest("a");
-  if (link && link.getAttribute("href")?.startsWith("/")) {
-    event.preventDefault();
-    history.pushState(null, "", link.getAttribute("href"));
-    renderRoute(true);
-  } else if (
+  if (
     header.classList.contains("is-menu-open") &&
     !header.contains(event.target)
   ) {
@@ -905,7 +900,7 @@ window.addEventListener("resize", () => {
 });
 
 window.addEventListener("scroll", setHeaderState, { passive: true });
-window.addEventListener("popstate", () => renderRoute(true));
+window.addEventListener("hashchange", () => renderRoute(true));
 document.querySelector("[data-year]").textContent = new Date().getFullYear();
 setHeaderState();
 renderRoute();
