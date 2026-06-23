@@ -3351,12 +3351,20 @@ html.is-route-changing .route-view {
   }
 
   .service-core {
-    width: 112px;
-    height: 112px;
+    width: 122px;
+    height: 122px;
   }
 
   .service-core strong {
-    font-size: 1.65rem;
+    font-size: 1.7rem;
+  }
+
+  .service-core small {
+    font-size: 0.56rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+    line-height: 1.2;
+    padding: 0 4px;
   }
 
   .hero-lead {
@@ -3441,12 +3449,13 @@ html.is-route-changing .route-view {
   }
 
   .full-text-heading {
-    grid-template-columns: 32px 1fr;
+    grid-template-columns: 32px 1fr auto;
+    align-items: center;
+    gap: 16px;
   }
 
   .full-text-heading > a {
-    grid-column: 2;
-    margin-top: 10px;
+    margin-top: 0;
   }
 
   .article-page-shell,

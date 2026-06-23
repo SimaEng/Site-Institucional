@@ -54,14 +54,14 @@ const articles = [
     content: [
       {
         type: "lead",
-        text: "A Engenharia Necessária é uma abordagem estratégica que orienta a aplicação da engenharia ao longo de todas as etapas do projeto, desde a identificação de necessidades até sua implantação, integrando sua gestão."
+        text: "A <strong>Engenharia Necessária</strong> é uma abordagem estratégica que orienta a aplicação da engenharia ao longo de <strong>todas as etapas do projeto</strong>, desde a identificação de necessidades até sua implantação, integrando sua gestão."
       },
-      "Nas fases iniciais do projeto, atuamos de forma decisiva com engenharia conceitual, orçamentação, estudos de viabilidade técnico-econômica e definição clara de escopo, assegurando informações confiáveis para decisões técnicas e gerenciais antes da aprovação do investimento.",
-      "Após a decisão de investir, o conceito da Engenharia Necessária continua guiando a engenharia básica e detalhada, garantindo coerência com as premissas e escolhas realizadas anteriormente. Essa atuação evita excessos de detalhamento, reduz mudanças tardias e preserva os objetivos de custo, prazo e desempenho definidos no início do projeto. Dessa forma, a engenharia é aplicada com foco em eficiência e controle de riscos.",
-      "Com uma metodologia adaptada à realidade de cada cliente, desenvolvemos apenas os estudos e entregáveis realmente necessários em cada fase do ciclo de cada projeto. O resultado se traduz em projetos mais maduros, decisões mais seguras e maior previsibilidade de resultados, oferecendo engenharia na medida certa para empresas que buscam reduzir riscos, otimizar investimentos e aumentar a confiabilidade de seus projetos.",
+      "Nas fases iniciais do projeto, atuamos de forma decisiva com <strong>engenharia conceitual, orçamentação, estudos de viabilidade técnica - econômica e definição clara de escopo</strong>, assegurando informações confiáveis para decisões técnicas e gerenciais antes da aprovação do investimento.",
+      "Após a decisão de investir, o conceito da Engenharia Necessária continua guiando a engenharia básica e detalhada, garantindo <strong>coerência com as premissas e escolhas</strong> realizadas anteriormente. Essa atuação <strong>evita excessos de detalhamento, reduz mudanças tardias e preserva os objetivos</strong> de custo, prazo e desempenho definidos no início do projeto. Dessa forma, a engenharia é aplicada com foco em <strong>eficiência e controle de riscos</strong>.",
+      "Com uma metodologia adaptada à realidade de cada cliente, desenvolvemos <strong>apenas os estudos e entregáveis realmente necessários</strong> em cada fase do ciclo de cada projeto. O resultado se traduz em <strong>projetos mais maduros, decisões mais seguras e maior previsibilidade de resultados</strong>, oferecendo <strong>engenharia na medida certa</strong> para empresas que buscam reduzir riscos, otimizar investimentos e aumentar a confiabilidade de seus projetos.",
       {
         type: "cta",
-        text: "Descubra como aplicar a Engenharia Necessária no seu projeto",
+        text: "Entre em contato e descubra como aplicar a Engenharia Necessária no seu projeto.",
         href: "#/contato"
       }
     ]
@@ -77,9 +77,9 @@ const articles = [
     content: [
       {
         type: "lead",
-        text: "Atuamos no desenvolvimento de projetos industriais desde as etapas iniciais de viabilidade técnica até o detalhamento completo da engenharia, conectando concepção, definição tecnológica e implantação às necessidades operacionais e estratégicas de cada cliente."
+        text: "A <strong>SIMA atua no desenvolvimento de projetos industriais</strong> desde as etapas iniciais de <strong>viabilidade técnica</strong> até o <strong>detalhamento completo da engenharia</strong>, conectando concepção, definição tecnológica e implantação às necessidades operacionais e estratégicas de cada cliente."
       },
-      "Em muitos casos, nossa atuação se inicia antes mesmo da definição da solução técnica, apoiando a estruturação do projeto, a avaliação de alternativas e, quando necessário, a própria definição da tecnologia a ser adotada, inclusive com integração a universidades e centros de conhecimento.",
+      "Em muitos casos, nossa atuação se inicia antes mesmo da definição da solução técnica, apoiando a <strong>estruturação do projeto, a avaliação de alternativas</strong> e, quando necessário, a própria <strong>definição da tecnologia a ser adotada</strong>, inclusive com integração a universidades e centros de conhecimento.",
       { type: "heading", text: "O que fazemos" },
       {
         type: "features",
@@ -88,16 +88,17 @@ const articles = [
           { title: "Definição tecnológica", text: "Suporte à escolha de processos e soluções, com integração a parceiros especializados quando aplicável." },
           { title: "Projetos multidisciplinares integrados", text: "Atuação coordenada entre civil, mecânica, tubulação, elétrica, instrumentação e demais disciplinas." },
           { title: "Desenvolvimento de engenharia", text: "Evolução dos projetos com níveis de detalhamento adequados a cada etapa." },
-          { title: "Integração com implantação", text: "Engenharia orientada à construtibilidade, montagem e operação." }
+          { title: "Integração com implantação", text: "Engenharia orientada à Construtibilidade, montagem e operação." }
         ]
       },
       { type: "heading", text: "Como atuamos" },
-      "Os projetos são desenvolvidos com foco na viabilidade técnica, segurança, eficiência operacional e aderência às condições reais de implantação.",
-      "Estruturamos a engenharia de forma integrada, com definição clara de premissas, consistência entre disciplinas e atenção às interfaces, garantindo que as soluções sejam tecnicamente sólidas e aplicáveis na prática.",
-      "Nossa atuação é colaborativa, envolvendo clientes, fornecedores, parceiros tecnológicos e equipes de execução desde as fases iniciais, contribuindo para decisões mais consistentes e redução de retrabalhos ao longo do projeto.",
+      "Os projetos são desenvolvidos com foco na <strong>viabilidade técnica, segurança, eficiência operacional e aderência</strong> às condições reais de implantação.",
+      "A SIMA <strong>estrutura a engenharia de forma integrada</strong>, com definição clara de premissas, consistência entre disciplinas e atenção às interfaces, garantindo que as soluções sejam <strong>tecnicamente sólidas e aplicáveis na prática</strong>.",
+      "Nossa atuação é <strong>colaborativa</strong>, envolvendo clientes, fornecedores, parceiros tecnológicos e equipes de execução desde as fases iniciais, contribuindo para <strong>decisões mais consistentes e redução de retrabalhos</strong> ao longo do projeto.",
       { type: "heading", text: "Nosso diferencial" },
-      "A experiência acumulada em projetos industriais nos permite aplicar a engenharia com o nível adequado de profundidade em cada etapa — conceito que estruturamos internamente como Engenharia Necessária.",
-      "Essa abordagem assegura que o projeto evolua com equilíbrio entre qualidade técnica, prazo e investimento, desde sua concepção até a implementação.",
+      "A experiência acumulada em projetos industriais permite à SIMA aplicar a engenharia com o <strong>nível adequado de profundidade em cada etapa</strong> — conceito que estruturamos internamente como <strong>engenharia necessária</strong>.",
+      "Essa abordagem assegura que o projeto evolua com <strong>equilíbrio entre qualidade técnica, prazo e investimento</strong>, desde sua concepção até a implementação.",
+      { type: "heading", text: "Nosso compromisso" },
       { type: "statement", text: "Engenharia consistente para definir. Aplicável para implementar." }
     ]
   },
@@ -170,9 +171,9 @@ const articles = [
     content: [
       {
         type: "lead",
-        text: "Na SIMA, o gerenciamento de projetos é conduzido como um elemento integrador — conectando engenharia, suprimentos, execução e demais frentes para assegurar que o projeto avance com consistência técnica, previsibilidade e alinhamento aos objetivos de cada cliente."
+        text: "Na SIMA, o <strong>gerenciamento de projetos</strong> é conduzido como um elemento integrador — conectando <strong>engenharia, suprimentos, execução e demais frentes</strong> para assegurar que o projeto avance com consistência técnica, previsibilidade e alinhamento aos objetivos daquele cliente."
       },
-      "Nossa atuação vai além do controle tradicional. Estruturamos o gerenciamento de forma aderente ao contexto de cada empreendimento, atuando no planejamento, acompanhamento e tomada de decisão ao longo de todo o ciclo do projeto.",
+      "Nossa atuação vai além do controle tradicional. Estruturamos o gerenciamento de forma aderente ao contexto de cada empreendimento, atuando no <strong>planejamento, acompanhamento e tomada de decisão</strong> ao longo de todo o ciclo do projeto.",
       { type: "heading", text: "Nossa atuação estruturada" },
       {
         type: "phases",
@@ -200,7 +201,7 @@ const articles = [
             title: "Controlar",
             points: [
               "Monitoramento de prazos, custos, qualidade e evolução física",
-              "Controle de CAPEX previsto versus realizado, com atualização contínua",
+              "Controle de CAPEX (previsto x realizado), com atualização contínua",
               "Gestão de cronogramas com apoio de algoritmos inteligentes",
               "Controle e rastreabilidade da documentação técnica"
             ]
@@ -218,12 +219,12 @@ const articles = [
         ]
       },
       { type: "heading", text: "Como atuamos" },
-      "Assim como na Engenharia Necessária, aplicamos o gerenciamento de projetos com foco no que efetivamente agrega valor.",
-      "Os processos, ferramentas e níveis de controle são ajustados à complexidade de cada projeto, à cultura organizacional do cliente e aos requisitos de governança — garantindo rigor na gestão, sem gerar burocracia desnecessária.",
-      "A incorporação de ferramentas próprias com algoritmos inteligentes, especialmente voltadas à gestão do tempo, amplia a capacidade de leitura do projeto, antecipando desvios e qualificando decisões ao longo de sua evolução.",
+      "Assim como na engenharia necessária, aplicamos o gerenciamento de projetos com foco <strong>no que efetivamente agrega valor</strong>.",
+      "Os processos, ferramentas e níveis de controle são ajustados à complexidade daquele projeto, à cultura organizacional do cliente e aos requisitos de governança — garantindo <strong>rigor na gestão, sem gerar burocracia desnecessária</strong>.",
+      "A incorporação de ferramentas próprias com <strong>algoritmos inteligentes</strong>, especialmente voltadas à gestão do tempo, amplia a capacidade de leitura do projeto, <strong>antecipando desvios e qualificando decisões</strong> ao longo de sua evolução.",
       { type: "heading", text: "Por que é diferente" },
-      "Projetos industriais são dinâmicos e exigem decisões contínuas.",
-      "Nossa abordagem combina estrutura, proximidade e capacidade de adaptação — integrando planejamento, engenharia e execução, com atuação efetiva em campo e suporte consistente à tomada de decisão."
+      "Projetos industriais são dinâmicos e <strong>exigem decisões contínuas</strong>.",
+      "Nossa abordagem combina <strong>estrutura, proximidade e capacidade de adaptação</strong> — integrando planejamento, engenharia e execução, com atuação efetiva em campo e <strong>suporte consistente à tomada de decisão</strong>."
     ]
   },
   {
