@@ -405,7 +405,7 @@ h2 em {
 }
 
 .button,
-.text-link {
+.tag {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -413,6 +413,7 @@ h2 em {
   min-height: 56px;
   padding: 14px 20px 14px 24px;
   border-radius: 999px;
+  font-family: "Aptos", "Segoe UI", Arial, sans-serif;
   font-size: .86rem;
   font-weight: 750;
   line-height: 1.2;
