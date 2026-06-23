@@ -352,9 +352,9 @@ const templates = {
         <div class="hero-copy">
           <p class="eyebrow hero-eyebrow"><span></span>Engenharia industrial desde 1991</p>
           <h1 id="hero-title">O presente construindo o <em>futuro.</em></h1>
-          <p class="hero-kicker">Elaboração e gerenciamento da implantação de projetos industriais.</p>
+          <p class="hero-kicker">Engenharia de projetos industriais: da viabilidade técnica ao gerenciamento de implantação.</p>
           <p class="hero-lead">
-            Da viabilidade à implantação, unimos engenharia, gestão e experiência de campo para transformar desafios industriais em instalações seguras, produtivas e sustentáveis.
+            Somos uma empresa de engenharia industrial especializada em projetos industriais multidisciplinares, engenharia básica, detalhamento e gerenciamento de implantação de empreendimentos de alta complexidade.
           </p>
           <div class="hero-actions">
             <a class="button button-light" href="#/atuacao">Conheça nossa atuação <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
@@ -387,7 +387,7 @@ const templates = {
       <div class="section-shell home-service-grid">
         <div class="home-service-copy reveal">
           <p class="eyebrow eyebrow-light"><span></span>Engenharia necessária</p>
-          <h2>Um sistema integrado de desenvolvimento, decisão e gestão de projetos.</h2>
+          <h2>Um sistema integrado de desenvolvimento, decisão e gestão de projetos industriais.</h2>
         </div>
         <div class="home-service-visual" aria-hidden="true">
           <div class="service-blueprint-grid"></div>
@@ -420,7 +420,7 @@ const templates = {
           <div class="service-data service-data-bottom"><span></span><span></span><span></span><span></span></div>
         </div>
         <div class="home-service-detail reveal">
-          <p>Aplicamos a engenharia com a profundidade adequada em cada fase, da identificação das necessidades à implantação, para reduzir riscos, otimizar investimentos e aumentar a previsibilidade dos resultados.</p>
+          <p>Aplicamos engenharia industrial com a profundidade adequada em cada fase — da identificação das necessidades à implantação —, para reduzir riscos, otimizar investimentos e aumentar a previsibilidade dos resultados em projetos industriais.</p>
           <a class="button button-light" href="#/artigo/engenharia-necessaria">Entenda o conceito <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </div>
       </div>
@@ -432,20 +432,22 @@ const templates = {
           <div class="eng-necessaria-header reveal">
             <p class="eyebrow eyebrow-light"><span></span>O que é</p>
             <h2>Engenharia Necessária</h2>
-            <h3>Sistema Integrado de Desenvolvimento, Decisão e Gestão de Projetos</h3>
+            <h3>Sistema Integrado de Desenvolvimento, Decisão e Gestão de Projetos Industriais</h3>
             <p class="eng-necessaria-lead">A Engenharia Necessária é uma abordagem estratégica que orienta a aplicação da engenharia ao longo de todas as etapas do projeto, desde a identificação de necessidades até sua implantação, integrando sua gestão.</p>
           </div>
           <div class="eng-necessaria-cards">
-            <a href="#/artigo/engenharia-necessaria" class="eng-card reveal" style="transition-delay: 100ms;">
+            <div class="eng-card reveal" style="transition-delay: 100ms;">
               <i class="ri-compass-3-line" aria-hidden="true"></i>
               <h4>Fases Iniciais</h4>
               <p>Atuamos de forma decisiva com engenharia conceitual, orçamentação, estudos de viabilidade técnica-econômica e definição clara de escopo, assegurando informações confiáveis para decisões técnicas e gerenciais antes da aprovação do investimento.</p>
-            </a>
-            <a href="#/artigo/engenharia-necessaria" class="eng-card reveal" style="transition-delay: 200ms;">
+              <a href="#/artigo/engenharia-necessaria" class="eng-card-cta">Ler artigo completo <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+            </div>
+            <div class="eng-card reveal" style="transition-delay: 200ms;">
               <i class="ri-settings-4-line" aria-hidden="true"></i>
               <h4>Após a Decisão</h4>
               <p>O conceito continua guiando a engenharia básica e detalhada, garantindo coerência com as premissas. Essa atuação evita excessos de detalhamento, reduz mudanças tardias e preserva os objetivos de custo, prazo e desempenho definidos no início do projeto.</p>
-            </a>
+              <a href="#/artigo/engenharia-necessaria" class="eng-card-cta">Ler artigo completo <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -456,7 +458,7 @@ const templates = {
         <div class="reveal">
           <p class="eyebrow"><span></span>Desde 1991</p>
           <h2>Uma trajetória construída junto à indústria.</h2>
-          <p class="home-cta-copy">Começamos com planejamento de manutenção e evoluímos para uma atuação multidisciplinar em elaboração de projetos e gerenciamento de implantações.</p>
+          <p class="home-cta-copy">Começamos com planejamento de manutenção industrial e evoluímos para uma atuação multidisciplinar em elaboração de projetos industriais e gerenciamento de implantação de empreendimentos.</p>
           <a class="text-link" href="#/sima">Conheça nossa história <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </div>
         <div class="reveal">
@@ -708,7 +710,6 @@ const articleTemplate = (article) => `
       <div class="article-prose">
         ${renderContentBlocks(article.content)}
         <footer class="article-signature">
-          <span>Sima Engenharia</span>
           <a href="#/contato">Fale sobre um projeto <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </footer>
       </div>
