@@ -3621,3 +3621,85 @@ html.is-route-changing .route-view {
     transform: none;
   }
 }
+
+/* --- Engenharia Necessaria Custom Section --- */
+.eng-necessaria-section {
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+.eng-necessaria-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 900px) {
+  .eng-necessaria-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+}
+
+.eng-necessaria-header h2 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.eng-necessaria-header h3 {
+  font-size: 1.1rem;
+  color: var(--blue-400);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.eng-necessaria-lead {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+.eng-necessaria-cards {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.eng-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg, 1rem);
+  transition: transform 0.3s var(--ease), background 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.eng-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--blue-400);
+}
+
+.eng-card i {
+  font-size: 2.5rem;
+  color: var(--blue-400);
+  display: inline-block;
+  margin-bottom: 1.25rem;
+}
+
+.eng-card h4 {
+  font-size: 1.25rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.eng-card p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}

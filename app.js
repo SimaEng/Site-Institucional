@@ -426,6 +426,31 @@ const templates = {
       </div>
     </section>
 
+    <section class="section section-dark eng-necessaria-section">
+      <div class="section-shell">
+        <div class="eng-necessaria-grid">
+          <div class="eng-necessaria-header reveal">
+            <p class="eyebrow eyebrow-light"><span></span>O que é</p>
+            <h2>Engenharia Necessária</h2>
+            <h3>Sistema Integrado de Desenvolvimento, Decisão e Gestão de Projetos</h3>
+            <p class="eng-necessaria-lead">A Engenharia Necessária é uma abordagem estratégica que orienta a aplicação da engenharia ao longo de todas as etapas do projeto, desde a identificação de necessidades até sua implantação, integrando sua gestão.</p>
+          </div>
+          <div class="eng-necessaria-cards">
+            <div class="eng-card reveal" style="transition-delay: 100ms;">
+              <i class="ri-compass-3-line" aria-hidden="true"></i>
+              <h4>Fases Iniciais</h4>
+              <p>Atuamos de forma decisiva com engenharia conceitual, orçamentação, estudos de viabilidade técnica-econômica e definição clara de escopo, assegurando informações confiáveis para decisões técnicas e gerenciais antes da aprovação do investimento.</p>
+            </div>
+            <div class="eng-card reveal" style="transition-delay: 200ms;">
+              <i class="ri-settings-4-line" aria-hidden="true"></i>
+              <h4>Após a Decisão</h4>
+              <p>O conceito continua guiando a engenharia básica e detalhada, garantindo coerência com as premissas. Essa atuação evita excessos de detalhamento, reduz mudanças tardias e preserva os objetivos de custo, prazo e desempenho definidos no início do projeto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section home-cta">
       <div class="section-shell home-cta-grid">
         <div class="reveal">
