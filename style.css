@@ -3622,7 +3622,10 @@ html.is-route-changing .route-view {
   }
 }
 
-/* --- Engenharia Necessaria Custom Section --- */
+.home-service {
+  padding-bottom: 4rem;
+}
+
 .eng-necessaria-section {
   padding-top: 2rem;
   padding-bottom: 6rem;
@@ -3637,7 +3640,7 @@ html.is-route-changing .route-view {
   .eng-necessaria-grid {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
   }
 }
 
@@ -3670,6 +3673,8 @@ html.is-route-changing .route-view {
 }
 
 .eng-card {
+  display: block;
+  text-decoration: none;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2.5rem;

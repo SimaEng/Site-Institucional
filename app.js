@@ -436,16 +436,16 @@ const templates = {
             <p class="eng-necessaria-lead">A Engenharia Necessária é uma abordagem estratégica que orienta a aplicação da engenharia ao longo de todas as etapas do projeto, desde a identificação de necessidades até sua implantação, integrando sua gestão.</p>
           </div>
           <div class="eng-necessaria-cards">
-            <div class="eng-card reveal" style="transition-delay: 100ms;">
+            <a href="#/artigo/engenharia-necessaria" class="eng-card reveal" style="transition-delay: 100ms;">
               <i class="ri-compass-3-line" aria-hidden="true"></i>
               <h4>Fases Iniciais</h4>
               <p>Atuamos de forma decisiva com engenharia conceitual, orçamentação, estudos de viabilidade técnica-econômica e definição clara de escopo, assegurando informações confiáveis para decisões técnicas e gerenciais antes da aprovação do investimento.</p>
-            </div>
-            <div class="eng-card reveal" style="transition-delay: 200ms;">
+            </a>
+            <a href="#/artigo/engenharia-necessaria" class="eng-card reveal" style="transition-delay: 200ms;">
               <i class="ri-settings-4-line" aria-hidden="true"></i>
               <h4>Após a Decisão</h4>
               <p>O conceito continua guiando a engenharia básica e detalhada, garantindo coerência com as premissas. Essa atuação evita excessos de detalhamento, reduz mudanças tardias e preserva os objetivos de custo, prazo e desempenho definidos no início do projeto.</p>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -634,10 +634,6 @@ const templates = {
     ${pageHero("Para clientes", "Vamos falar sobre o seu <em>projeto.</em>", "Este canal é dedicado a empresas que buscam engenharia, elaboração de projetos ou gerenciamento de implantação.")}
     <section class="section client-contact-page">
       <div class="section-shell">
-        <div class="audience-marker audience-marker-client">
-          <span>Canal comercial</span>
-          <strong>Sou cliente ou represento uma empresa</strong>
-        </div>
         <div class="client-contact-grid">
           <div class="client-contact-copy reveal">
             <p class="eyebrow"><span></span>Fale conosco</p>
