@@ -1,3 +1,4 @@
+const basePath = "/Site-Institucional";
 const articles = [
   {
     id: "essencia-do-chao-de-fabrica",
@@ -62,7 +63,7 @@ const articles = [
       {
         type: "cta",
         text: "Entre em contato e descubra como aplicar a Engenharia Necessária no seu projeto.",
-        href: "/contato"
+        href: "#/contato"
       }
     ]
   },
@@ -266,7 +267,10 @@ const visualMark = `
     <div class="visual-ring visual-ring-large"></div>
     <div class="visual-ring visual-ring-small"></div>
     <div class="visual-card">
-      <img src="logo-so-img.png" alt="Logotipo Sima Engenharia" width="392" height="479">
+      <div class="visual-logo-build" aria-hidden="true">
+        <canvas class="hero-logo-canvas"></canvas>
+        <img src="/logo-so-img.png" alt="" width="392" height="479">
+      </div>
       <p>Engenharia feita<br>por pessoas.</p>
     </div>
     <div class="visual-label visual-label-top"><i class="ri-draft-line"></i>Pensar</div>
@@ -288,7 +292,7 @@ const pageHero = (eyebrow, title, description) => `
 `;
 
 const articleCards = (items = articles) => items.map((article) => `
-  <a class="insight-card reveal" href="/artigo/${article.id}">
+  <a class="insight-card reveal" href="/Site-Institucional/artigo/${article.id}">
     <div class="insight-top">
       <span class="insight-category">${article.categoryLabel}</span>
     </div>
@@ -336,7 +340,7 @@ const fullTextBlock = (article) => `
     <div class="full-text-copy">
       ${renderContentBlocks(article.content, true)}
       <div class="full-text-read-more" style="margin-top: 32px;">
-        <a class="button contact-button" href="/artigo/${article.id}">Ler artigo completo <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+        <a class="button contact-button" href="/Site-Institucional/artigo/${article.id}">Ler artigo completo <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
       </div>
     </div>
   </article>
@@ -357,8 +361,8 @@ const templates = {
             Somos uma empresa de engenharia industrial especializada em projetos industriais multidisciplinares, engenharia básica, detalhamento e gerenciamento de implantação de empreendimentos de alta complexidade.
           </p>
           <div class="hero-actions">
-            <a class="button button-light" href="/atuacao">Conheça nossa atuação <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
-            <a class="text-link text-link-light" href="/sima">Conheça nossa história <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+            <a class="button button-light" href="/Site-Institucional/atuacao">Conheça nossa atuação <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+            <a class="text-link text-link-light" href="/Site-Institucional/sima">Conheça nossa história <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
           </div>
         </div>
         ${visualMark}
@@ -374,7 +378,10 @@ const templates = {
     <section class="section home-statement">
       <div class="section-shell">
         <div class="statement-grid">
-          <p class="eyebrow reveal"><span></span>Mãos ao futuro</p>
+          <div class="statement-left">
+            <p class="eyebrow reveal"><span></span>Mãos ao futuro</p>
+            <img class="statement-logo reveal" src="/logo-so-img.png" alt="Sima Engenharia" width="392" height="479">
+          </div>
           <div class="reveal">
             <h2>O FUTURO É HUMANO E DIVERSO</h2>
             <p>Trabalhamos com equipes em que a diversidade está presente e usamos a tecnologia como ferramenta para ampliar competências e talentos de profissionais voltados às soluções.</p>
@@ -386,7 +393,7 @@ const templates = {
     <section class="section section-dark home-service">
       <div class="section-shell home-service-grid">
         <div class="home-service-copy reveal">
-          <p class="eyebrow eyebrow-light"><span></span>Engenharia necessária</p>
+          <p class="eyebrow eyebrow-light"><span></span>Conceito</p>
           <h2>Um sistema integrado de desenvolvimento, decisão e gestão de projetos industriais.</h2>
         </div>
         <div class="home-service-visual" aria-hidden="true">
@@ -421,7 +428,7 @@ const templates = {
         </div>
         <div class="home-service-detail reveal">
           <p>Aplicamos engenharia industrial com a profundidade adequada em cada fase — da identificação das necessidades à implantação —, para reduzir riscos, otimizar investimentos e aumentar a previsibilidade dos resultados em projetos industriais.</p>
-          <a class="button button-light" href="/artigo/engenharia-necessaria">Entenda o conceito <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+          <a class="button button-light" href="/Site-Institucional/artigo/engenharia-necessaria">Entenda o conceito <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
@@ -430,23 +437,26 @@ const templates = {
       <div class="section-shell">
         <div class="eng-necessaria-grid">
           <div class="eng-necessaria-header reveal">
-            <p class="eyebrow eyebrow-light"><span></span>O que é</p>
+            <p class="eyebrow eyebrow-light"><span></span>Na prática</p>
             <h2>Engenharia Necessária</h2>
             <h3>Sistema Integrado de Desenvolvimento, Decisão e Gestão de Projetos Industriais</h3>
             <p class="eng-necessaria-lead">A Engenharia Necessária é uma abordagem estratégica que orienta a aplicação da engenharia ao longo de todas as etapas do projeto, desde a identificação de necessidades até sua implantação, integrando sua gestão.</p>
+            <div class="eng-necessaria-visual">
+              <canvas class="geo-canvas"></canvas>
+            </div>
           </div>
           <div class="eng-necessaria-cards">
             <div class="eng-card reveal" style="transition-delay: 100ms;">
               <i class="ri-compass-3-line" aria-hidden="true"></i>
               <h4>Fases Iniciais</h4>
               <p>Atuamos de forma decisiva com engenharia conceitual, orçamentação, estudos de viabilidade técnica-econômica e definição clara de escopo, assegurando informações confiáveis para decisões técnicas e gerenciais antes da aprovação do investimento.</p>
-              <a href="/artigo/engenharia-necessaria" class="eng-card-cta">Ler artigo completo <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+              <a href="/Site-Institucional/artigo/engenharia-necessaria" class="eng-card-cta">Ler artigo completo <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
             </div>
             <div class="eng-card reveal" style="transition-delay: 200ms;">
               <i class="ri-settings-4-line" aria-hidden="true"></i>
               <h4>Após a Decisão</h4>
               <p>O conceito continua guiando a engenharia básica e detalhada, garantindo coerência com as premissas. Essa atuação evita excessos de detalhamento, reduz mudanças tardias e preserva os objetivos de custo, prazo e desempenho definidos no início do projeto.</p>
-              <a href="/artigo/engenharia-necessaria" class="eng-card-cta">Ler artigo completo <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+              <a href="/Site-Institucional/artigo/engenharia-necessaria" class="eng-card-cta">Ler artigo completo <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -459,20 +469,29 @@ const templates = {
           <p class="eyebrow"><span></span>Desde 1991</p>
           <h2>Uma trajetória construída junto à indústria.</h2>
           <p class="home-cta-copy">Começamos com planejamento de manutenção industrial e evoluímos para uma atuação multidisciplinar em elaboração de projetos industriais e gerenciamento de implantação de empreendimentos.</p>
-          <a class="text-link" href="/sima">Conheça nossa história <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+          <a class="text-link" href="/Site-Institucional/sima">Conheça nossa história <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </div>
         <div class="reveal">
           <p class="eyebrow"><span></span>Experiência sem fronteiras</p>
           <h2>Projetos nacionais e internacionais.</h2>
           <p class="home-cta-copy">Apoiamos diferentes setores industriais com Engenharia Necessária, rastreabilidade técnica e soluções que consideram os efeitos de cada decisão.</p>
-          <a class="text-link" href="/atuacao">Veja onde atuamos <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+          <a class="text-link" href="/Site-Institucional/atuacao">Veja onde atuamos <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
   `,
 
   sima: () => `
-    ${pageHero("Quem somos", "Nossa história é feita de <em>engenharia em movimento.</em>", "Experiência, evolução constante e decisões que consideram suas consequências.")}
+    <section class="page-hero page-hero-sima">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="page-hero-shell">
+        <div>
+          <p class="eyebrow hero-eyebrow"><span></span>Quem somos</p>
+          <h1>Nossa história é feita de <em>engenharia em movimento.</em></h1>
+          <p>Experiência, evolução constante e decisões que consideram suas consequências.</p>
+        </div>
+      </div>
+    </section>
     <section class="section">
       <div class="section-shell">
         <div class="content-split">
@@ -532,15 +551,15 @@ const templates = {
           <div class="expertise-list">
             <article class="expertise-item reveal" data-expertise>
               <button id="expertise-projects-button" type="button" aria-expanded="true" aria-controls="expertise-projects-panel"><i class="ri-draft-line expertise-icon" aria-hidden="true"></i><span class="expertise-name">Projetos Industriais</span><i class="ri-subtract-line expertise-toggle" aria-hidden="true"></i></button>
-              <div class="expertise-panel" id="expertise-projects-panel" role="region" aria-labelledby="expertise-projects-button"><div><p>Engenharia multidisciplinar para viabilizar, projetar e implementar empreendimentos industriais.</p><ul><li><i class="ri-check-line"></i>Viabilidade e concepção técnica</li><li><i class="ri-check-line"></i>Definição tecnológica</li><li><i class="ri-check-line"></i>Projetos multidisciplinares integrados</li><li><i class="ri-check-line"></i>Integração com implantação</li></ul><a class="expertise-more" href="/artigo/projetos-industriais">Conheça nossa atuação em projetos <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-projects" aria-hidden="true"><span></span><span></span><span></span></div></div>
+              <div class="expertise-panel" id="expertise-projects-panel" role="region" aria-labelledby="expertise-projects-button"><div><p>Engenharia multidisciplinar para viabilizar, projetar e implementar empreendimentos industriais.</p><ul><li><i class="ri-check-line"></i>Viabilidade e concepção técnica</li><li><i class="ri-check-line"></i>Definição tecnológica</li><li><i class="ri-check-line"></i>Projetos multidisciplinares integrados</li><li><i class="ri-check-line"></i>Integração com implantação</li></ul><a class="expertise-more" href="/Site-Institucional/artigo/projetos-industriais">Conheça nossa atuação em projetos <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-projects" aria-hidden="true"><span></span><span></span><span></span></div></div>
             </article>
             <article class="expertise-item reveal" data-expertise>
               <button id="expertise-management-button" type="button" aria-expanded="false" aria-controls="expertise-management-panel"><i class="ri-settings-4-line expertise-icon" aria-hidden="true"></i><span class="expertise-name">Gerenciamento de Projetos</span><i class="ri-add-line expertise-toggle" aria-hidden="true"></i></button>
-              <div class="expertise-panel" id="expertise-management-panel" role="region" aria-labelledby="expertise-management-button" aria-hidden="true"><div><p>Gestão aplicada na medida certa para conectar engenharia, suprimentos, execução e tomada de decisão.</p><ul><li><i class="ri-check-line"></i>Planejar escopo, estratégias e cronogramas</li><li><i class="ri-check-line"></i>Desenvolver e integrar as frentes do projeto</li><li><i class="ri-check-line"></i>Controlar prazo, CAPEX, qualidade e documentação</li><li><i class="ri-check-line"></i>Agir em campo e tratar desvios</li></ul><a class="expertise-more" href="/artigo/gerenciamento-e-controle-de-implantacao-de-projetos-industriais">Veja nossa abordagem de gestão <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-management" aria-hidden="true"><span></span><span></span><span></span><span></span></div></div>
+              <div class="expertise-panel" id="expertise-management-panel" role="region" aria-labelledby="expertise-management-button" aria-hidden="true"><div><p>Gestão aplicada na medida certa para conectar engenharia, suprimentos, execução e tomada de decisão.</p><ul><li><i class="ri-check-line"></i>Planejar escopo, estratégias e cronogramas</li><li><i class="ri-check-line"></i>Desenvolver e integrar as frentes do projeto</li><li><i class="ri-check-line"></i>Controlar prazo, CAPEX, qualidade e documentação</li><li><i class="ri-check-line"></i>Agir em campo e tratar desvios</li></ul><a class="expertise-more" href="/Site-Institucional/artigo/gerenciamento-e-controle-de-implantacao-de-projetos-industriais">Veja nossa abordagem de gestão <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-management" aria-hidden="true"><span></span><span></span><span></span><span></span></div></div>
             </article>
             <article class="expertise-item reveal" data-expertise>
               <button id="expertise-industries-button" type="button" aria-expanded="false" aria-controls="expertise-industries-panel"><i class="ri-focus-3-line expertise-icon" aria-hidden="true"></i><span class="expertise-name">Engenharia Necessária</span><i class="ri-add-line expertise-toggle" aria-hidden="true"></i></button>
-              <div class="expertise-panel" id="expertise-industries-panel" role="region" aria-labelledby="expertise-industries-button" aria-hidden="true"><div><p>Sistema integrado de desenvolvimento, decisão e gestão que aplica a engenharia com a profundidade necessária em cada fase.</p><ul><li><i class="ri-check-line"></i>Engenharia conceitual e orçamentação</li><li><i class="ri-check-line"></i>Viabilidade técnico-econômica e definição de escopo</li><li><i class="ri-check-line"></i>Coerência entre engenharia básica e detalhada</li><li><i class="ri-check-line"></i>Eficiência, previsibilidade e controle de riscos</li></ul><a class="expertise-more" href="/artigo/engenharia-necessaria">Entenda a Engenharia Necessária <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-field" aria-hidden="true"><div class="venn-wrapper"><span></span><span></span><span></span></div></div></div>
+              <div class="expertise-panel" id="expertise-industries-panel" role="region" aria-labelledby="expertise-industries-button" aria-hidden="true"><div><p>Sistema integrado de desenvolvimento, decisão e gestão que aplica a engenharia com a profundidade necessária em cada fase.</p><ul><li><i class="ri-check-line"></i>Engenharia conceitual e orçamentação</li><li><i class="ri-check-line"></i>Viabilidade técnico-econômica e definição de escopo</li><li><i class="ri-check-line"></i>Coerência entre engenharia básica e detalhada</li><li><i class="ri-check-line"></i>Eficiência, previsibilidade e controle de riscos</li></ul><a class="expertise-more" href="/Site-Institucional/artigo/engenharia-necessaria">Entenda a Engenharia Necessária <i class="ri-arrow-right-line"></i></a></div><div class="expertise-shape shape-field" aria-hidden="true"><div class="venn-wrapper"><span></span><span></span><span></span></div></div></div>
             </article>
           </div>
         </div>
@@ -561,19 +580,24 @@ const templates = {
       <section class="section approach">
         <div class="section-shell">
           <div class="approach-title-row">
-            <h2 class="reveal">O futuro é humano e diverso.</h2>
-            <p class="reveal">Trabalhamos com equipes em que a diversidade está presente e usamos a tecnologia como ferramenta para ampliar competências e talentos de profissionais voltados às soluções.</p>
+            <div class="approach-title-mark reveal" aria-hidden="true">
+              <img src="/logo-so-img.png" alt="" width="392" height="479">
+            </div>
+            <div class="approach-title-copy reveal">
+              <h2>O futuro é humano e diverso.</h2>
+              <p>Trabalhamos com equipes em que a diversidade está presente e usamos a tecnologia como ferramenta para ampliar competências e talentos de profissionais voltados às soluções.</p>
+            </div>
           </div>
           <div class="approach-grid">
             <article class="approach-card approach-featured reveal">
-              <div class="approach-art" aria-hidden="true"><img src="logo-so-img.png" alt="" width="392" height="479"><div class="approach-circle"></div></div>
+              <div class="approach-art" aria-hidden="true"><img src="/logo-so-img.png" alt="" width="392" height="479"><div class="approach-circle"></div></div>
               <div class="approach-content">
                 <span>Segurança</span>
                 <h3>A vida é um valor inegociável.</h3>
                 <p>Instalações seguras na construção e na operação. Bem-estar físico e psicológico como compromisso coletivo.</p>
                 <div class="approach-links">
-                  <a href="/artigo/seguranca">Conheça nossa visão sobre segurança <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
-                  <a href="/artigo/pausa-seguranca">Veja a Pausa Para Segurança <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                  <a href="/Site-Institucional/artigo/seguranca">Conheça nossa visão sobre segurança <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                  <a href="/Site-Institucional/artigo/pausa-seguranca">Veja a Pausa Para Segurança <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
                 </div>
               </div>
             </article>
@@ -583,7 +607,7 @@ const templates = {
               <h3>Antes da resposta, compreender.</h3>
               <p>A escuta amplia o diálogo, aproxima expectativas e transforma informação em decisões mais consistentes.</p>
               <div class="approach-links">
-                <a href="/artigo/tempo-de-escutar">Leia “Tempo de Escutar” <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                <a href="/Site-Institucional/artigo/tempo-de-escutar">Leia “Tempo de Escutar” <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
               </div>
             </article>
             <article class="approach-card reveal">
@@ -592,7 +616,7 @@ const templates = {
               <h3>Competência técnica e formação humana.</h3>
               <p>O Programa Ampliando Competências apoia escolhas de desenvolvimento feitas pelas próprias pessoas do time.</p>
               <div class="approach-links">
-                <a href="/artigo/programa-ampliando-competencias-acp">Conheça o Programa ACP <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                <a href="/Site-Institucional/artigo/programa-ampliando-competencias-acp">Conheça o Programa ACP <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
               </div>
             </article>
             <article class="approach-card reveal">
@@ -601,8 +625,8 @@ const templates = {
               <h3>Respeito aos pactos e às pessoas.</h3>
               <p>Informações disponíveis e decisões transparentes, respeitando individualidades e particularidades.</p>
               <div class="approach-links">
-                <a href="/artigo/lacos-de-confianca">Leia “Laços de Confiança” <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
-                <a href="/artigo/alinhamento-de-percepcoes">Entenda o Alinhamento de Percepções <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                <a href="/Site-Institucional/artigo/lacos-de-confianca">Leia “Laços de Confiança” <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                <a href="/Site-Institucional/artigo/alinhamento-de-percepcoes">Entenda o Alinhamento de Percepções <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
               </div>
             </article>
           </div>
@@ -645,19 +669,31 @@ const templates = {
             <div class="client-actions">
               <a class="button contact-button" href="mailto:simaeng@simaeng.com.br?subject=Contato%20comercial%20-%20Projeto%20industrial">Enviar e-mail comercial <i class="ri-mail-send-line" aria-hidden="true"></i></a>
               <a class="button contact-button-wa" href="https://wa.me/551125062970" target="_blank" rel="noopener noreferrer">Conversar no WhatsApp <i class="ri-whatsapp-line" aria-hidden="true"></i></a>
-              <a class="text-link" href="tel:+551125062970">Ligar: 11.2506-2970 <i class="ri-phone-line" aria-hidden="true"></i></a>
+              <a class="text-link" href="tel:+551125062970">Ligar: + 55 11 2506-2970 <i class="ri-phone-line" aria-hidden="true"></i></a>
             </div>
           </div>
           <aside class="contact-info-panel contact-info-client reveal">
             <div><span>E-mail comercial</span><a href="mailto:simaeng@simaeng.com.br">simaeng@simaeng.com.br</a></div>
-            <div><span>WhatsApp</span><a href="https://wa.me/551125062970" target="_blank" rel="noopener noreferrer">+55 11 2506-2970</a></div>
-            <div><span>Telefone</span><a href="tel:+551125062970">+55 11 2506-2970</a></div>
-            <div><span>Escritório</span><address>Rua Ouvidor Peleja nº 772<br>Vila Mariana — São Paulo / SP — Brasil</address></div>
+            <div><span>WhatsApp</span><a href="https://wa.me/551125062970" target="_blank" rel="noopener noreferrer">+ 55 11 2506-2970</a></div>
+            <div><span>Telefone</span><a href="tel:+551125062970">+ 55 11 2506-2970</a></div>
+            <div class="contact-map-block">
+              <span>Escritório</span>
+              <address>Rua Ouvidor Peleja nº 772<br>Vila Mariana — São Paulo / SP — Brasil</address>
+              <div class="contact-map-embed">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0339741155153!2d-46.631755524889684!3d-23.603114478771204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bca7cfa1e2d%3A0x400de64dccf5c379!2sR.%20Ouvidor%20Peleja%2C%20772%20-%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004128-001!5e0!3m2!1spt-BR!2sbr!4v1782405888955!5m2!1spt-BR!2sbr"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen=""
+                  title="Mapa do escritório da SIMA Engenharia"
+                ></iframe>
+              </div>
+            </div>
           </aside>
         </div>
         <div class="route-separator reveal">
           <div><span>Você está procurando emprego?</span><strong>Currículos não devem ser enviados ao canal comercial.</strong></div>
-          <a class="button route-button" href="/carreiras">Ir para Trabalhe conosco <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+          <a class="button route-button" href="/Site-Institucional/carreiras">Ir para Trabalhe conosco <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
@@ -689,7 +725,7 @@ const templates = {
         </div>
         <div class="route-separator route-separator-client reveal">
           <div><span>Você representa uma empresa?</span><strong>Solicitações comerciais possuem um canal exclusivo.</strong></div>
-          <a class="button route-button" href="/contato">Ir para o contato comercial <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+          <a class="button route-button" href="/Site-Institucional/contato">Ir para o contato comercial <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
@@ -700,7 +736,7 @@ const articleTemplate = (article) => `
   <article class="article-page">
     <header class="article-page-header">
       <div class="article-page-shell">
-        <a class="article-back" href="/conteudos"><i class="ri-arrow-left-line" aria-hidden="true"></i> Todos os conteúdos</a>
+        <a class="article-back" href="/Site-Institucional/conteudos"><i class="ri-arrow-left-line" aria-hidden="true"></i> Todos os conteúdos</a>
         <div class="article-meta"><span>${article.categoryLabel}</span></div>
         <h1>${article.title}</h1>
         ${article.tagline ? `<p class="article-tagline">${article.tagline}</p>` : ""}
@@ -710,19 +746,22 @@ const articleTemplate = (article) => `
       <div class="article-prose">
         ${renderContentBlocks(article.content)}
         <footer class="article-signature">
-          <a href="/contato">Fale sobre um projeto <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+          <a href="/Site-Institucional/contato">Fale sobre um projeto <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
         </footer>
       </div>
       <aside class="article-aside">
         <span>Continue lendo</span>
-        ${articles.filter((item) => item.id !== article.id).slice(0, 3).map((item) => `<a href="/artigo/${item.id}">${item.title}<i class="ri-arrow-right-line" aria-hidden="true"></i></a>`).join("")}
+        ${articles.filter((item) => item.id !== article.id).slice(0, 3).map((item) => `<a href="/Site-Institucional/artigo/${item.id}">${item.title}<i class="ri-arrow-right-line" aria-hidden="true"></i></a>`).join("")}
       </aside>
     </div>
   </article>
 `;
 
 const parseRoute = () => {
-  const raw = location.pathname.replace(/^\//, "") || "inicio";
+  const path = location.pathname.startsWith(basePath)
+    ? location.pathname.slice(basePath.length)
+    : location.pathname;
+  const raw = path.replace(/^\//, "") || "inicio";
   const [route, param] = raw.split("/");
   return { route, param };
 };
@@ -836,6 +875,452 @@ const updateNavigation = (route) => {
   });
 };
 
+// --- Geometric Morph Animation ---
+function getPolygonPoints(cx, cy, r, numSides, totalPoints = 120, angleOffset = 0) {
+  const vertices = [];
+  for (let i = 0; i < numSides; i++) {
+    const angle = angleOffset + (i * 2 * Math.PI) / numSides;
+    vertices.push({
+      x: cx + r * Math.cos(angle),
+      y: cy + r * Math.sin(angle)
+    });
+  }
+  
+  const points = [];
+  const pointsPerSide = totalPoints / numSides;
+  for (let i = 0; i < numSides; i++) {
+    const p1 = vertices[i];
+    const p2 = vertices[(i + 1) % numSides];
+    for (let j = 0; j < pointsPerSide; j++) {
+      const t = j / pointsPerSide;
+      points.push({
+        x: p1.x * (1 - t) + p2.x * t,
+        y: p1.y * (1 - t) + p2.y * t
+      });
+    }
+  }
+  return points;
+}
+
+function getCirclePoints(cx, cy, r, totalPoints = 120, angleOffset = 0) {
+  const points = [];
+  for (let i = 0; i < totalPoints; i++) {
+    const angle = angleOffset + (i * 2 * Math.PI) / totalPoints;
+    points.push({
+      x: cx + r * Math.cos(angle),
+      y: cy + r * Math.sin(angle)
+    });
+  }
+  return points;
+}
+
+class GeometricAnimation {
+  constructor(container) {
+    this.container = container;
+    this.canvas = container.querySelector('canvas');
+    if (!this.canvas) {
+      this.canvas = document.createElement('canvas');
+      this.canvas.className = 'geo-canvas';
+      this.container.appendChild(this.canvas);
+    }
+    this.ctx = this.canvas.getContext('2d');
+    this.requestId = null;
+    
+    // Animation state
+    this.shapes = [3, 4, 5, 6, 8, 12, 'circle'];
+    this.currentShapeIndex = 0;
+    this.nextShapeIndex = 1;
+    this.transitionProgress = 0;
+    this.transitionDuration = 90;
+    this.shapeHoldDuration = 180;
+    this.holdTimer = 0;
+    this.angle = 0;
+    
+    // Particles
+    this.particles = [];
+    this.initParticles();
+    
+    // Resize & Loop
+    this.resize = this.resize.bind(this);
+    this.loop = this.loop.bind(this);
+    
+    window.addEventListener('resize', this.resize);
+    this.resize();
+    
+    this.requestId = requestAnimationFrame(this.loop);
+  }
+  
+  initParticles() {
+    this.particles = [];
+    for (let i = 0; i < 20; i++) {
+      this.particles.push({
+        x: Math.random(),
+        y: Math.random(),
+        vx: (Math.random() - 0.5) * 0.0008,
+        vy: (Math.random() - 0.5) * 0.0008,
+        size: Math.random() * 2 + 1,
+        alpha: Math.random() * 0.4 + 0.15
+      });
+    }
+  }
+  
+  resize() {
+    const displayWidth = this.container.clientWidth;
+    const displayHeight = this.container.clientHeight;
+    if (displayWidth === 0 || displayHeight === 0) return;
+    
+    const targetWidth = Math.floor(displayWidth * window.devicePixelRatio);
+    const targetHeight = Math.floor(displayHeight * window.devicePixelRatio);
+    
+    if (this.canvas.width !== targetWidth || this.canvas.height !== targetHeight) {
+      this.canvas.width = targetWidth;
+      this.canvas.height = targetHeight;
+      this.ctx.setTransform(1, 0, 0, 1, 0, 0);
+      this.ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+      this.width = displayWidth;
+      this.height = displayHeight;
+    }
+  }
+  
+  destroy() {
+    if (this.requestId) {
+      cancelAnimationFrame(this.requestId);
+    }
+    window.removeEventListener('resize', this.resize);
+  }
+  
+  getShapePoints(shapeIndex, cx, cy, r, angle) {
+    const type = this.shapes[shapeIndex];
+    if (type === 'circle') {
+      return getCirclePoints(cx, cy, r, 120, angle);
+    } else {
+      return getPolygonPoints(cx, cy, r, type, 120, angle);
+    }
+  }
+  
+  loop() {
+    this.resize();
+    this.update();
+    this.draw();
+    this.requestId = requestAnimationFrame(this.loop);
+  }
+  
+  update() {
+    this.angle += 0.002;
+    if (this.holdTimer < this.shapeHoldDuration) {
+      this.holdTimer++;
+    } else {
+      this.transitionProgress += 1 / this.transitionDuration;
+      if (this.transitionProgress >= 1) {
+        this.transitionProgress = 0;
+        this.holdTimer = 0;
+        this.currentShapeIndex = this.nextShapeIndex;
+        this.nextShapeIndex = (this.nextShapeIndex + 1) % this.shapes.length;
+      }
+    }
+    
+    this.particles.forEach(p => {
+      p.x += p.vx;
+      p.y += p.vy;
+      if (p.x < 0 || p.x > 1) p.vx *= -1;
+      if (p.y < 0 || p.y > 1) p.vy *= -1;
+    });
+  }
+  
+  draw() {
+    const ctx = this.ctx;
+    const w = this.width;
+    const h = this.height;
+    if (!w || !h) return;
+    
+    ctx.clearRect(0, 0, w, h);
+    
+    const cx = w / 2;
+    const cy = h / 2;
+    const r = Math.min(w, h) * 0.32;
+    
+    // Grid Background
+    ctx.strokeStyle = 'rgba(130, 188, 226, 0.03)';
+    ctx.lineWidth = 1;
+    const gridSize = 36;
+    for (let x = 0; x < w; x += gridSize) {
+      ctx.beginPath();
+      ctx.moveTo(x, 0);
+      ctx.lineTo(x, h);
+      ctx.stroke();
+    }
+    for (let y = 0; y < h; y += gridSize) {
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(w, y);
+      ctx.stroke();
+    }
+    
+    // Crosshair at center
+    ctx.strokeStyle = 'rgba(130, 188, 226, 0.1)';
+    ctx.beginPath();
+    ctx.moveTo(cx - 15, cy); ctx.lineTo(cx + 15, cy);
+    ctx.moveTo(cx, cy - 15); ctx.lineTo(cx, cy + 15);
+    ctx.stroke();
+    
+    // Particles
+    this.particles.forEach(p => {
+      ctx.fillStyle = `rgba(130, 188, 226, ${p.alpha})`;
+      ctx.beginPath();
+      ctx.arc(p.x * w, p.y * h, p.size, 0, Math.PI * 2);
+      ctx.fill();
+    });
+    
+    // Rotating outer ring (dashed)
+    ctx.strokeStyle = 'rgba(130, 188, 226, 0.08)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r * 1.25, 0, Math.PI * 2);
+    ctx.stroke();
+    
+    ctx.strokeStyle = 'rgba(130, 188, 226, 0.16)';
+    ctx.setLineDash([4, 10]);
+    ctx.beginPath();
+    ctx.arc(cx, cy, r * 1.25, -this.angle, Math.PI * 2 - this.angle);
+    ctx.stroke();
+    ctx.setLineDash([]);
+    
+    // Inner/Outer helper dots
+    ctx.fillStyle = 'rgba(130, 188, 226, 0.3)';
+    for (let i = 0; i < 4; i++) {
+      const a = this.angle * 0.8 + (i * Math.PI / 2);
+      ctx.beginPath();
+      ctx.arc(cx + r * 1.25 * Math.cos(a), cy + r * 1.25 * Math.sin(a), 2, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    
+    // Get interpolated points
+    const ptsA = this.getShapePoints(this.currentShapeIndex, cx, cy, r, this.angle);
+    const ptsB = this.getShapePoints(this.nextShapeIndex, cx, cy, r, this.angle);
+    
+    const ease = t => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    const t = ease(this.transitionProgress);
+    
+    const currentPts = [];
+    for (let i = 0; i < 120; i++) {
+      currentPts.push({
+        x: ptsA[i].x * (1 - t) + ptsB[i].x * t,
+        y: ptsA[i].y * (1 - t) + ptsB[i].y * t
+      });
+    }
+    
+    // Main morphing shape outline (glowing)
+    ctx.shadowBlur = 10;
+    ctx.shadowColor = 'rgba(130, 188, 226, 0.5)';
+    ctx.strokeStyle = 'rgba(130, 188, 226, 0.8)';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(currentPts[0].x, currentPts[0].y);
+    for (let i = 1; i < 120; i++) {
+      ctx.lineTo(currentPts[i].x, currentPts[i].y);
+    }
+    ctx.closePath();
+    ctx.stroke();
+    
+    // Soft transparent shape fill
+    ctx.shadowBlur = 0;
+    ctx.fillStyle = 'rgba(21, 65, 128, 0.12)';
+    ctx.fill();
+    
+    // Draw vertex nodes
+    ctx.fillStyle = '#ffffff';
+    ctx.shadowBlur = 6;
+    ctx.shadowColor = '#ffffff';
+    const numNodes = this.shapes[this.nextShapeIndex] === 'circle' ? 8 : this.shapes[this.nextShapeIndex];
+    const step = 120 / numNodes;
+    for (let i = 0; i < 120; i += step) {
+      const idx = Math.floor(i);
+      ctx.beginPath();
+      ctx.arc(currentPts[idx].x, currentPts[idx].y, 3, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    ctx.shadowBlur = 0;
+    
+    // Draw lines connecting nodes to center
+    ctx.strokeStyle = 'rgba(130, 188, 226, 0.08)';
+    ctx.lineWidth = 1;
+    for (let i = 0; i < 120; i += step) {
+      const idx = Math.floor(i);
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.lineTo(currentPts[idx].x, currentPts[idx].y);
+      ctx.stroke();
+    }
+    
+
+  }
+}
+
+let activeGeoAnim = null;
+let activeHeroLogoAnim = null;
+
+const initGeometricAnimation = () => {
+  if (activeGeoAnim) {
+    activeGeoAnim.destroy();
+    activeGeoAnim = null;
+  }
+  const container = document.querySelector('.eng-necessaria-visual');
+  if (!container) return;
+  activeGeoAnim = new GeometricAnimation(container);
+};
+
+class HeroLogoAnimation {
+  constructor(container) {
+    this.container = container;
+    this.canvas = container.querySelector('.hero-logo-canvas');
+    if (!this.canvas) return;
+    this.ctx = this.canvas.getContext('2d');
+    this.frame = 0;
+    this.duration = 72;
+    this.requestId = null;
+    this.resize = this.resize.bind(this);
+    this.loop = this.loop.bind(this);
+    window.addEventListener('resize', this.resize);
+    this.resize();
+    this.requestId = requestAnimationFrame(this.loop);
+  }
+
+  resize() {
+    const rect = this.container.getBoundingClientRect();
+    if (!rect.width || !rect.height) return;
+    const dpr = window.devicePixelRatio || 1;
+    this.canvas.width = Math.floor(rect.width * dpr);
+    this.canvas.height = Math.floor(rect.height * dpr);
+    this.ctx.setTransform(1, 0, 0, 1, 0, 0);
+    this.ctx.scale(dpr, dpr);
+    this.width = rect.width;
+    this.height = rect.height;
+  }
+
+  destroy() {
+    if (this.requestId) cancelAnimationFrame(this.requestId);
+    window.removeEventListener('resize', this.resize);
+    if (this.ctx && this.width && this.height) this.ctx.clearRect(0, 0, this.width, this.height);
+  }
+
+  loop() {
+    this.draw();
+    this.frame += 1;
+    if (this.frame <= this.duration) {
+      this.requestId = requestAnimationFrame(this.loop);
+    }
+  }
+
+  draw() {
+    const ctx = this.ctx;
+    const w = this.width;
+    const h = this.height;
+    if (!ctx || !w || !h) return;
+
+    ctx.clearRect(0, 0, w, h);
+
+    const t = Math.min(this.frame / this.duration, 1);
+    const ease = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    const fade = t < 0.78 ? 1 : 1 - ((t - 0.78) / 0.22);
+    const alpha = Math.max(0, fade);
+    const cx = w / 2;
+    const cy = h / 2;
+    const radius = Math.min(w, h) * 0.34;
+    const rotation = (-0.65 + ease * 0.65);
+
+    ctx.save();
+    ctx.globalAlpha = alpha;
+
+    ctx.strokeStyle = 'rgba(161, 214, 255, 0.12)';
+    ctx.lineWidth = 1;
+    const grid = Math.max(16, Math.round(w / 6));
+    for (let x = -grid; x < w + grid; x += grid) {
+      ctx.beginPath();
+      ctx.moveTo(x, 0);
+      ctx.lineTo(x, h);
+      ctx.stroke();
+    }
+    for (let y = -grid; y < h + grid; y += grid) {
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(w, y);
+      ctx.stroke();
+    }
+
+    ctx.strokeStyle = `rgba(161, 214, 255, ${0.52 * alpha})`;
+    ctx.lineWidth = 1.2;
+    ctx.beginPath();
+    ctx.arc(cx, cy, radius * (0.72 + 0.28 * ease), rotation, rotation + Math.PI * (1.25 + 0.4 * ease));
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, radius * 1.34, rotation + 1.9, rotation + 1.9 + Math.PI * (0.9 + 0.25 * ease));
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, radius * 1.76, rotation - 2.5, rotation - 2.5 + Math.PI * (0.85 + 0.25 * ease));
+    ctx.stroke();
+
+    ctx.strokeStyle = `rgba(161, 214, 255, ${0.35 * alpha})`;
+    ctx.setLineDash([4, 10]);
+    ctx.beginPath();
+    ctx.arc(cx, cy, radius * 1.12, rotation - 0.8, rotation + Math.PI * 1.15);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    ctx.strokeStyle = `rgba(255, 255, 255, ${0.7 * alpha})`;
+    ctx.fillStyle = `rgba(255, 255, 255, ${0.85 * alpha})`;
+    ctx.lineWidth = 1;
+
+    const cornerX = cx - radius * 1.06 + 10 * (1 - ease);
+    const cornerY = cy + radius * 0.24 + 8 * (1 - ease);
+    const cornerSize = radius * 0.62;
+    ctx.beginPath();
+    ctx.moveTo(cornerX, cornerY - cornerSize * 0.58);
+    ctx.lineTo(cornerX, cornerY);
+    ctx.lineTo(cornerX + cornerSize * 0.58, cornerY);
+    ctx.stroke();
+
+    const traceLen = radius * 0.22;
+    const traceBaseX = cx + radius * 0.02;
+    const traceBaseY = cy - radius * 0.42;
+    ctx.beginPath();
+    ctx.moveTo(traceBaseX - traceLen * 0.5, traceBaseY);
+    ctx.lineTo(traceBaseX + traceLen * (0.1 + 0.9 * ease), traceBaseY - traceLen * 0.26);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(traceBaseX - traceLen * 0.34, traceBaseY + traceLen * 0.14);
+    ctx.lineTo(traceBaseX + traceLen * (0.02 + 0.72 * ease), traceBaseY - traceLen * 0.1);
+    ctx.stroke();
+
+    const dotOrbit = radius * (1.22 + 0.1 * ease);
+    const dotAngleA = -1.1 + ease * 1.15;
+    const dotAngleB = 0.55 + ease * 0.7;
+    ctx.shadowBlur = 10;
+    ctx.shadowColor = `rgba(255,255,255,${0.45 * alpha})`;
+    ctx.beginPath();
+    ctx.arc(cx + Math.cos(dotAngleA) * dotOrbit, cy + Math.sin(dotAngleA) * dotOrbit, 2.8, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(cx + Math.cos(dotAngleB) * radius * 0.55, cy + Math.sin(dotAngleB) * radius * 0.55, 2.2, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.shadowBlur = 0;
+
+    ctx.restore();
+  }
+}
+
+const initHeroLogoAnimation = () => {
+  if (activeHeroLogoAnim) {
+    activeHeroLogoAnim.destroy();
+    activeHeroLogoAnim = null;
+  }
+  const container = document.querySelector('.visual-logo-build');
+  if (!container) return;
+  activeHeroLogoAnim = new HeroLogoAnimation(container);
+};
+
 const beginRouteChange = () => {
   document.documentElement.classList.add("is-route-changing");
 };
@@ -876,6 +1361,8 @@ const renderRouteContent = () => {
   bindExpertise();
   bindFilters();
   observeReveals();
+  initGeometricAnimation();
+  initHeroLogoAnimation();
   requestAnimationFrame(() => {
     app.focus({ preventScroll: true });
     forceRouteTop();
@@ -928,11 +1415,11 @@ window.addEventListener("popstate", () => renderRoute(true));
 
 document.addEventListener("click", e => {
   const a = e.target.closest("a");
-  if (a && a.href && !a.hasAttribute("target") && !a.getAttribute("href").startsWith("http") && !a.getAttribute("href").startsWith("mailto") && !a.getAttribute("href").startsWith("tel")) {
-    const rawHref = a.getAttribute("href");
-    if (rawHref.startsWith("/")) {
-      e.preventDefault();
-      history.pushState(null, "", rawHref);
+  if (a && a.href && a.href.startsWith(window.location.origin + "/Site-Institucional/") && !a.hasAttribute("target") && !a.getAttribute("href").startsWith("http") && !a.getAttribute("href").startsWith("mailto") && !a.getAttribute("href").startsWith("tel")) {
+    e.preventDefault();
+    const path = a.getAttribute("href");
+    if (path.startsWith("/")) {
+      history.pushState(null, "", path);
       renderRoute(true);
     }
   }
