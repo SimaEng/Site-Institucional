@@ -78,7 +78,7 @@ const articles = [
     content: [
       {
         type: "lead",
-        text: "A <strong>SIMA atua no desenvolvimento de projetos industriais</strong> desde as etapas iniciais de <strong>viabilidade técnica</strong> até o <strong>detalhamento completo da engenharia</strong>, conectando concepção, definição tecnológica e implantação às necessidades operacionais e estratégicas de cada cliente."
+        text: "A <strong>Sima atua no desenvolvimento de projetos industriais</strong> desde as etapas iniciais de <strong>viabilidade técnica</strong> até o <strong>detalhamento completo da engenharia</strong>, conectando concepção, definição tecnológica e implantação às necessidades operacionais e estratégicas de cada cliente."
       },
       "Em muitos casos, nossa atuação se inicia antes mesmo da definição da solução técnica, apoiando a <strong>estruturação do projeto, a avaliação de alternativas</strong> e, quando necessário, a própria <strong>definição da tecnologia a ser adotada</strong>, inclusive com integração a universidades e centros de conhecimento.",
       { type: "heading", text: "O que fazemos" },
@@ -94,10 +94,10 @@ const articles = [
       },
       { type: "heading", text: "Como atuamos" },
       "Os projetos são desenvolvidos com foco na <strong>viabilidade técnica, segurança, eficiência operacional e aderência</strong> às condições reais de implantação.",
-      "A SIMA <strong>estrutura a engenharia de forma integrada</strong>, com definição clara de premissas, consistência entre disciplinas e atenção às interfaces, garantindo que as soluções sejam <strong>tecnicamente sólidas e aplicáveis na prática</strong>.",
+      "A Sima <strong>estrutura a engenharia de forma integrada</strong>, com definição clara de premissas, consistência entre disciplinas e atenção às interfaces, garantindo que as soluções sejam <strong>tecnicamente sólidas e aplicáveis na prática</strong>.",
       "Nossa atuação é <strong>colaborativa</strong>, envolvendo clientes, fornecedores, parceiros tecnológicos e equipes de execução desde as fases iniciais, contribuindo para <strong>decisões mais consistentes e redução de retrabalhos</strong> ao longo do projeto.",
       { type: "heading", text: "Nosso diferencial" },
-      "A experiência acumulada em projetos industriais permite à SIMA aplicar a engenharia com o <strong>nível adequado de profundidade em cada etapa</strong> — conceito que estruturamos internamente como <strong>engenharia necessária</strong>.",
+      "A experiência acumulada em projetos industriais permite à Sima aplicar a engenharia com o <strong>nível adequado de profundidade em cada etapa</strong> — conceito que estruturamos internamente como <strong>engenharia necessária</strong>.",
       "Essa abordagem assegura que o projeto evolua com <strong>equilíbrio entre qualidade técnica, prazo e investimento</strong>, desde sua concepção até a implementação.",
       { type: "heading", text: "Nosso compromisso" },
       { type: "statement", text: "Engenharia consistente para definir. Aplicável para implementar." }
@@ -172,7 +172,7 @@ const articles = [
     content: [
       {
         type: "lead",
-        text: "Na SIMA, o <strong>gerenciamento de projetos</strong> é conduzido como um elemento integrador — conectando <strong>engenharia, suprimentos, execução e demais frentes</strong> para assegurar que o projeto avance com consistência técnica, previsibilidade e alinhamento aos objetivos daquele cliente."
+        text: "Na Sima, o <strong>gerenciamento de projetos</strong> é conduzido como um elemento integrador — conectando <strong>engenharia, suprimentos, execução e demais frentes</strong> para assegurar que o projeto avance com consistência técnica, previsibilidade e alinhamento aos objetivos daquele cliente."
       },
       "Nossa atuação vai além do controle tradicional. Estruturamos o gerenciamento de forma aderente ao contexto de cada empreendimento, atuando no <strong>planejamento, acompanhamento e tomada de decisão</strong> ao longo de todo o ciclo do projeto.",
       { type: "heading", text: "Nossa atuação estruturada" },
@@ -734,15 +734,15 @@ const parseRoute = () => {
 
 const setTitle = (route, article) => {
   const names = {
-    inicio: "SIMA Engenharia: projetos industriais, engenharia básica, detalhamento e gerenciamento de implantação",
-    sima: "Quem somos — SIMA Engenharia",
-    atuacao: "Engenharia de projetos industriais: do estudo de viabilidade ao detalhamento — SIMA",
-    "nossa-cultura": "Nossa cultura — SIMA Engenharia",
-    conteudos: "Nossos conteúdos — SIMA Engenharia",
-    contato: "Fale conosco — SIMA Engenharia",
-    carreiras: "Trabalhe conosco — SIMA Engenharia"
+    inicio: "Sima Engenharia: projetos industriais, engenharia básica, detalhamento e gerenciamento de implantação",
+    sima: "Quem somos — Sima Engenharia",
+    atuacao: "Engenharia de projetos industriais: do estudo de viabilidade ao detalhamento — Sima",
+    "nossa-cultura": "Nossa cultura — Sima Engenharia",
+    conteudos: "Nossos conteúdos — Sima Engenharia",
+    contato: "Fale conosco — Sima Engenharia",
+    carreiras: "Trabalhe conosco — Sima Engenharia"
   };
-  document.title = article ? `${article.title} — SIMA Engenharia` : names[route] || names.inicio;
+  document.title = article ? `${article.title} — Sima Engenharia` : names[route] || names.inicio;
 };
 
 const closeMenu = () => {

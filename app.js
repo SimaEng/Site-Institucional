@@ -78,7 +78,7 @@ const articles = [
     content: [
       {
         type: "lead",
-        text: "A <strong>SIMA atua no desenvolvimento de projetos industriais</strong> desde as etapas iniciais de <strong>viabilidade técnica</strong> até o <strong>detalhamento completo da engenharia</strong>, conectando concepção, definição tecnológica e implantação às necessidades operacionais e estratégicas de cada cliente."
+        text: "A <strong>Sima atua no desenvolvimento de projetos industriais</strong> desde as etapas iniciais de <strong>viabilidade técnica</strong> até o <strong>detalhamento completo da engenharia</strong>, conectando concepção, definição tecnológica e implantação às necessidades operacionais e estratégicas de cada cliente."
       },
       "Em muitos casos, nossa atuação se inicia antes mesmo da definição da solução técnica, apoiando a <strong>estruturação do projeto, a avaliação de alternativas</strong> e, quando necessário, a própria <strong>definição da tecnologia a ser adotada</strong>, inclusive com integração a universidades e centros de conhecimento.",
       { type: "heading", text: "O que fazemos" },
@@ -94,10 +94,10 @@ const articles = [
       },
       { type: "heading", text: "Como atuamos" },
       "Os projetos são desenvolvidos com foco na <strong>viabilidade técnica, segurança, eficiência operacional e aderência</strong> às condições reais de implantação.",
-      "A SIMA <strong>estrutura a engenharia de forma integrada</strong>, com definição clara de premissas, consistência entre disciplinas e atenção às interfaces, garantindo que as soluções sejam <strong>tecnicamente sólidas e aplicáveis na prática</strong>.",
+      "A Sima <strong>estrutura a engenharia de forma integrada</strong>, com definição clara de premissas, consistência entre disciplinas e atenção às interfaces, garantindo que as soluções sejam <strong>tecnicamente sólidas e aplicáveis na prática</strong>.",
       "Nossa atuação é <strong>colaborativa</strong>, envolvendo clientes, fornecedores, parceiros tecnológicos e equipes de execução desde as fases iniciais, contribuindo para <strong>decisões mais consistentes e redução de retrabalhos</strong> ao longo do projeto.",
       { type: "heading", text: "Nosso diferencial" },
-      "A experiência acumulada em projetos industriais permite à SIMA aplicar a engenharia com o <strong>nível adequado de profundidade em cada etapa</strong> — conceito que estruturamos internamente como <strong>engenharia necessária</strong>.",
+      "A experiência acumulada em projetos industriais permite à Sima aplicar a engenharia com o <strong>nível adequado de profundidade em cada etapa</strong> — conceito que estruturamos internamente como <strong>engenharia necessária</strong>.",
       "Essa abordagem assegura que o projeto evolua com <strong>equilíbrio entre qualidade técnica, prazo e investimento</strong>, desde sua concepção até a implementação.",
       { type: "heading", text: "Nosso compromisso" },
       { type: "statement", text: "Engenharia consistente para definir. Aplicável para implementar." }
@@ -172,7 +172,7 @@ const articles = [
     content: [
       {
         type: "lead",
-        text: "Na SIMA, o <strong>gerenciamento de projetos</strong> é conduzido como um elemento integrador — conectando <strong>engenharia, suprimentos, execução e demais frentes</strong> para assegurar que o projeto avance com consistência técnica, previsibilidade e alinhamento aos objetivos daquele cliente."
+        text: "Na Sima, o <strong>gerenciamento de projetos</strong> é conduzido como um elemento integrador — conectando <strong>engenharia, suprimentos, execução e demais frentes</strong> para assegurar que o projeto avance com consistência técnica, previsibilidade e alinhamento aos objetivos daquele cliente."
       },
       "Nossa atuação vai além do controle tradicional. Estruturamos o gerenciamento de forma aderente ao contexto de cada empreendimento, atuando no <strong>planejamento, acompanhamento e tomada de decisão</strong> ao longo de todo o ciclo do projeto.",
       { type: "heading", text: "Nossa atuação estruturada" },
@@ -484,7 +484,7 @@ const templates = {
       <div class="section-shell social-shell">
         <div class="social-heading">
           <p class="eyebrow"><span></span>Redes sociais</p>
-          <h2>Conecte-se com a SIMA.</h2>
+          <h2>Conecte-se com a Sima.</h2>
         </div>
         <div class="social-grid">
           <a class="social-card social-card-featured" href="https://www.linkedin.com/company/sima-engenharia/" target="_blank" rel="noreferrer">
@@ -723,7 +723,7 @@ const templates = {
                   loading="lazy"
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen=""
-                  title="Mapa do escritório da SIMA Engenharia"
+                  title="Mapa do escritório da Sima Engenharia"
                 ></iframe>
               </div>
             </div>
@@ -772,6 +772,160 @@ const templates = {
         </div>
       </div>
     </section>
+  `,
+
+  "solucoes-digitais": () => `
+    ${pageHero("Soluções Digitais", "Engenharia com <em>inteligência digital.</em>", "Desenvolvemos ferramentas sob medida, automações e assistentes baseados em IA para simplificar a gestão, acelerar decisões e garantir precisão nos projetos industriais.")}
+    
+    <!-- 01. Sima PLANUP -->
+    <section class="section">
+      <div class="section-shell">
+        <div class="content-split">
+          <div class="sticky-title reveal">
+            <p class="eyebrow"><span></span>01 · Gestão e Prazos</p>
+            <i class="ri-calendar-todo-line" style="font-size: clamp(2.5rem, 4vw, 3.5rem); color: var(--blue-600); display: block; margin: 20px 0 10px;"></i>
+            <h2>Sima PlanUp</h2>
+          </div>
+          <div class="editorial-copy reveal">
+            <p class="lead-copy">Visibilidade e simulação interativa de cronogramas de engenharia.</p>
+            <p><strong>O Problema:</strong> Empreendimentos industriais possuem cronogramas de planejamento complexos (geralmente gerados em MS Project). Profissionais sem licença do software ou treinamento técnico encontram dificuldades para extrair datas, planejar tarefas de sua disciplina ou entender o andamento geral, atrasando decisões críticas.</p>
+            <p><strong>A Solução:</strong> O Sima PlanUp é um aplicativo interativo que importa arquivos de planejamento e os traduz em um painel visual amigável. Líderes de disciplinas, gerentes de projetos e clientes conseguem acompanhar atividades, filtrar por áreas de interesse e verificar prazos sem barreiras de software.</p>
+            <p><strong>Como Funciona na Prática:</strong></p>
+            <ul style="list-style: none; padding: 0; margin: 18px 0 24px;">
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Simulação de Atrasos Segura:</strong> Permite testar cenários ("e se a entrega do reator atrasar 20 dias?") de forma não-destrutiva, sem alterar o cronograma original.</span></li>
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Boletins de Status Automáticos:</strong> Compila informativos periódicos com dados reais de andamento físico e planos de ação em um clique.</span></li>
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Interface Unificada:</strong> Centraliza cronogramas, documentos complementares e planilhas de avanço em um só lugar.</span></li>
+            </ul>
+            <a class="button contact-button" href="/Site-Institucional/contato?subject=Interesse%20no%20Sima%20PlanUp%20-%20Solucoes%20Digitais" style="display: inline-flex;">Falar sobre o PlanUp <i class="ri-arrow-right-line" aria-hidden="true" style="margin-left: 8px;"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. JUSCELINO -->
+    <section class="section" style="background: var(--blue-100);">
+      <div class="section-shell">
+        <div class="content-split">
+          <div class="sticky-title reveal">
+            <p class="eyebrow"><span></span>02 · Inteligência Artificial</p>
+            <i class="ri-robot-2-line" style="font-size: clamp(2.5rem, 4vw, 3.5rem); color: var(--blue-600); display: block; margin: 20px 0 10px;"></i>
+            <h2>Juscelino<br>Chatbot</h2>
+          </div>
+          <div class="editorial-copy reveal">
+            <p class="lead-copy">Consulta inteligente de especificações técnicas e entregáveis do projeto.</p>
+            <p><strong>O Problema:</strong> Projetos de engenharia industrial geram milhares de páginas de documentação técnica (memórias de cálculo, diagramas, listas de linhas e folhas de dados). Encontrar uma especificação crítica costuma exigir abrir pasta por pasta, folhear PDFs gigantescos e depender do histórico das equipes, resultando em horas perdidas e risco de divergências na execução.</p>
+            <p><strong>A Solução:</strong> O Juscelino atua como um assistente virtual inteligente integrado que lê, interpreta e organiza toda a documentação de projetos enviada ao cliente. Em uma interface de chat direta e amigável, o usuário faz perguntas em linguagem natural e o assistente responde em segundos, localizando e referenciando o documento técnico oficial.</p>
+            <p><strong>Como Funciona na Prática:</strong></p>
+            <ul style="list-style: none; padding: 0; margin: 18px 0 24px;">
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Entendimento de contexto (Semântico):</strong> Compreende o significado da pergunta técnica em vez de apenas pesquisar por palavras-chave exatas.</span></li>
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Rastreabilidade Total:</strong> Toda resposta da IA é acompanhada da indicação e do link para a folha ou arquivo original, garantindo a segurança técnica da informação.</span></li>
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Segurança no canteiro:</strong> Impede que equipes de campo ou clientes tomem decisões baseadas em arquivos obsoletos ou desatualizados.</span></li>
+            </ul>
+            <a class="button contact-button" href="/Site-Institucional/contato?subject=Interesse%20no%20Juscelino%20-%20Solucoes%20Digitais" style="display: inline-flex;">Falar sobre o Juscelino <i class="ri-arrow-right-line" aria-hidden="true" style="margin-left: 8px;"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. STELLA -->
+    <section class="section">
+      <div class="section-shell">
+        <div class="content-split">
+          <div class="sticky-title reveal">
+            <p class="eyebrow"><span></span>03 · Recursos Humanos</p>
+            <i class="ri-robot-2-line" style="font-size: clamp(2.5rem, 4vw, 3.5rem); color: var(--blue-600); display: block; margin: 20px 0 10px;"></i>
+            <h2>Stella<br>Chatbot</h2>
+          </div>
+          <div class="editorial-copy reveal">
+            <p class="lead-copy">Centralização e consulta imediata de políticas, benefícios e manuais internos.</p>
+            <p><strong>O Problema:</strong> Dúvidas cotidianas sobre banco de horas, políticas de reembolso, solicitações de férias e admissão costumam consumir tempo operacional valioso da equipe de Recursos Humanos. Além disso, as informações muitas vezes ficam espalhadas em manuais e pastas do OneDrive, dificultando a autonomia do colaborador.</p>
+            <p><strong>A Solução:</strong> A Stella é uma assistente interna inteligente projetada para o público interno da Sima. Ela indexa de forma segura a base de conhecimento de RH e responde a perguntas instantaneamente em linguagem natural, garantindo respostas padronizadas e rápidas para toda a equipe.</p>
+            <p><strong>Como Funciona na Prática:</strong></p>
+            <ul style="list-style: none; padding: 0; margin: 18px 0 24px;">
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Respostas Padronizadas:</strong> Garante que todos recebam a mesma informação oficial sobre regras corporativas, eliminando interpretações equivocadas.</span></li>
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Autonomia 24/7:</strong> Permite que o colaborador consulte informações a qualquer hora do dia ou da noite, sem depender da disponibilidade física do RH.</span></li>
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>RH Estratégico:</strong> Libera a equipe de gestão de pessoas de tarefas repetitivas de atendimento, permitindo focar em formação de lideranças e cultura corporativa.</span></li>
+            </ul>
+            <a class="button contact-button" href="/Site-Institucional/contato?subject=Interesse%20na%20Stella%20-%20Solucoes%20Digitais" style="display: inline-flex;">Falar sobre a Stella <i class="ri-arrow-right-line" aria-hidden="true" style="margin-left: 8px;"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. CAD-EXCEL -->
+    <section class="section" style="background: var(--blue-100);">
+      <div class="section-shell">
+        <div class="content-split">
+          <div class="sticky-title reveal">
+            <p class="eyebrow"><span></span>04 · Confiabilidade Técnica</p>
+            <i class="ri-pencil-ruler-2-line" style="font-size: clamp(2.5rem, 4vw, 3.5rem); color: var(--blue-600); display: block; margin: 20px 0 10px;"></i>
+            <h2>Sincronizador CAD-Excel</h2>
+          </div>
+          <div class="editorial-copy reveal">
+            <p class="lead-copy">Integração bidirecional automática entre diagramas de processo (P&ID) e especificações.</p>
+            <p><strong>O Problema:</strong> Um desenho técnico industrial possui milhares de instrumentos (como válvulas, transmissores e sensores). A criação manual das listas de tags e das folhas de especificações a partir do desenho exige a redigitação individual de atributos, o que consome semanas de engenharia e facilita falhas que afetam a compra de equipamentos.</p>
+            <p><strong>A Solução:</strong> Desenvolvemos um sincronizador que conecta diretamente os blocos de desenho do AutoCAD P&ID a planilhas de cálculo e especificações no Excel. Ao alterar qualquer especificação técnica na planilha, os dados no desenho técnico oficial são atualizados automaticamente (e vice-versa).</p>
+            <p><strong>Como Funciona na Prática:</strong></p>
+            <ul style="list-style: none; padding: 0; margin: 18px 0 24px;">
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Consistência de Engenharia:</strong> Elimina as divergências de tags entre o desenho desenhado no CAD e as listas de fabricação.</span></li>
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Geração em Lote de Folhas de Dados:</strong> Cria e preenche automaticamente documentos de especificações com base em templates certificados.</span></li>
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Controle de Revisões Integrado:</strong> Mantém rastreabilidade de todas as alterações feitas nas tags, garantindo governança do projeto.</span></li>
+            </ul>
+            <a class="button contact-button" href="/Site-Institucional/contato?subject=Interesse%20no%20Sincronizador%20CAD-Excel%20-%20Solucoes%20Digitais" style="display: inline-flex;">Falar sobre o Sincronizador <i class="ri-arrow-right-line" aria-hidden="true" style="margin-left: 8px;"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. LEITOR DE PROPOSTAS -->
+    <section class="section">
+      <div class="section-shell">
+        <div class="content-split">
+          <div class="sticky-title reveal">
+            <p class="eyebrow"><span></span>05 · Eficiência Comercial</p>
+            <i class="ri-file-search-line" style="font-size: clamp(2.5rem, 4vw, 3.5rem); color: var(--blue-600); display: block; margin: 20px 0 10px;"></i>
+            <h2>Leitor de Propostas</h2>
+          </div>
+          <div class="editorial-copy reveal">
+            <p class="lead-copy">Automação inteligente e IA para consolidação e extração de dados comerciais.</p>
+            <p><strong>O Problema:</strong> Ao orçar um grande projeto industrial, o comercial analisa diversas cotações de fornecedores e propostas técnicas com diferentes estruturas e formatos. Copiar manualmente dados de prazos, estimativas de custos e histogramas de horas para uma planilha central consome horas de trabalho operacional e gera risco de digitação de valores errados.</p>
+            <p><strong>A Solução:</strong> Desenvolvemos um fluxo automatizado inteligente que identifica novos arquivos de propostas comerciais (PDF ou Word) no OneDrive, extrai suas tabelas e textos e utiliza Inteligência Artificial para interpretar informações estruturadas e preencher a planilha master de cotação da Sima.</p>
+            <p><strong>Como Funciona na Prática:</strong></p>
+            <ul style="list-style: none; padding: 0; margin: 18px 0 24px;">
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Leitura de Documentos Não-Estruturados:</strong> A IA consegue interpretar textos e encontrar valores corretos de propostas mesmo sem formatos pré-definidos.</span></li>
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Redução de Tempo:</strong> O processo de consolidação de cotações para preparação de concorrências complexas passa a rodar em minutos.</span></li>
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Eliminação de Falhas de Cópia:</strong> Garante precisão absoluta nos valores de insumos e horas que balizam o preço final.</span></li>
+            </ul>
+            <a class="button contact-button" href="/Site-Institucional/contato?subject=Interesse%20no%20Leitor%20de%20Propostas%20-%20Solucoes%20Digitais" style="display: inline-flex;">Falar sobre o Leitor <i class="ri-arrow-right-line" aria-hidden="true" style="margin-left: 8px;"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. PAINEL DE EFICIENCIA OPERACIONAL -->
+    <section class="section" style="background: var(--blue-100);">
+      <div class="section-shell">
+        <div class="content-split">
+          <div class="sticky-title reveal">
+            <p class="eyebrow"><span></span>06 · Inteligência de Gestão</p>
+            <i class="ri-dashboard-3-line" style="font-size: clamp(2.5rem, 4vw, 3.5rem); color: var(--blue-600); display: block; margin: 20px 0 10px;"></i>
+            <h2>Painel de Eficiência</h2>
+          </div>
+          <div class="editorial-copy reveal">
+            <p class="lead-copy">Cruzamento em tempo real de horas vendidas com faturamento real e entregas físicas de engenharia.</p>
+            <p><strong>O Problema:</strong> Medir a real lucratividade de um projeto de engenharia é complexo. Muitas vezes, os dados comerciais (horas vendidas), os dados financeiros (faturamento e custos) e a entrega real em campo (desenhos técnicos aprovados) ficam isolados em diferentes planilhas, dificultando a tomada rápida de decisões.</p>
+            <p><strong>A Solução:</strong> Uma automação integrada que une estas fontes de dados. O sistema traduz o faturamento real em esforço operacional (HH Executado) com base nas tarifas de cargos e cruza isso com a quantidade de documentos gerados, permitindo visualizar a rentabilidade real de cada projeto de forma visual e centralizada.</p>
+            <p><strong>Como Funciona na Prática:</strong></p>
+            <ul style="list-style: none; padding: 0; margin: 18px 0 24px;">
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Monitoramento de Desvios:</strong> Compara a estimativa de horas da proposta com as horas executadas reais por disciplina e cargo em tempo real.</span></li>
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Indicadores Físico-Financeiros:</strong> Calcula métricas como custo de horas (HH) gastas por tipo de desenho técnico entregue ao cliente.</span></li>
+              <li style="margin-bottom: 12px; display: flex; align-items: start; gap: 10px;"><i class="ri-checkbox-circle-line" style="color: var(--blue-600); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i> <span><strong>Otimização de Preços:</strong> Fornece dados históricos precisos para que a diretoria melhore a governança de preços em contratos futuros.</span></li>
+            </ul>
+            <a class="button contact-button" href="/Site-Institucional/contato?subject=Interesse%20no%20Painel%20de%20Eficiencia%20-%20Solucoes%20Digitais" style="display: inline-flex;">Falar sobre o Painel <i class="ri-arrow-right-line" aria-hidden="true" style="margin-left: 8px;"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
   `
 };
 
@@ -811,15 +965,16 @@ const parseRoute = () => {
 
 const setTitle = (route, article) => {
   const names = {
-    inicio: "SIMA Engenharia: projetos industriais, engenharia básica, detalhamento e gerenciamento de implantação",
-    sima: "Quem somos — SIMA Engenharia",
-    atuacao: "Engenharia de projetos industriais: do estudo de viabilidade ao detalhamento — SIMA",
-    "nossa-cultura": "Nossa cultura — SIMA Engenharia",
-    conteudos: "Nossos conteúdos — SIMA Engenharia",
-    contato: "Fale conosco — SIMA Engenharia",
-    carreiras: "Trabalhe conosco — SIMA Engenharia"
+    inicio: "Sima Engenharia: projetos industriais, engenharia básica, detalhamento e gerenciamento de implantação",
+    sima: "Quem somos — Sima Engenharia",
+    atuacao: "Engenharia de projetos industriais: do estudo de viabilidade ao detalhamento — Sima",
+    "solucoes-digitais": "Soluções Digitais — Sima Engenharia",
+    "nossa-cultura": "Nossa cultura — Sima Engenharia",
+    conteudos: "Nossos conteúdos — Sima Engenharia",
+    contato: "Fale conosco — Sima Engenharia",
+    carreiras: "Trabalhe conosco — Sima Engenharia"
   };
-  document.title = article ? `${article.title} — SIMA Engenharia` : names[route] || names.inicio;
+  document.title = article ? `${article.title} — Sima Engenharia` : names[route] || names.inicio;
 };
 
 const closeMenu = () => {
