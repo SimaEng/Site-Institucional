@@ -1,10 +1,10 @@
 :root {
-  --blue-950: #081e3b;
-  --blue-900: #0d2d58;
-  --blue-800: #154180;
-  --blue-700: #1c5f9a;
-  --blue-600: #2e88b8;
-  --blue-400: #82bce2;
+  --blue-950: #144080;
+  --blue-900: #144080;
+  --blue-800: #144080;
+  --blue-700: #338AC7;
+  --blue-600: #2B8AB8;
+  --blue-400: #82BDE3;
   --blue-200: #c9e4f5;
   --blue-100: #eaf5fb;
   --ink: #10243d;
@@ -294,14 +294,14 @@ address {
   overflow: hidden;
   background:
     radial-gradient(circle at 77% 45%, rgba(130, 188, 226, .28), transparent 24%),
-    linear-gradient(135deg, var(--blue-950), var(--blue-800) 62%, #236f9f);
+    linear-gradient(135deg, var(--blue-950), var(--blue-700) 62%, var(--blue-600));
   color: var(--white);
 }
 
 .hero-grid {
   position: absolute;
   inset: 0;
-  opacity: .1;
+  opacity: .16;
   background-image:
     linear-gradient(rgba(255, 255, 255, .5) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, .5) 1px, transparent 1px);
@@ -333,9 +333,9 @@ address {
   position: relative;
   z-index: 2;
   width: var(--shell);
-  min-height: 760px;
+  min-height: 700px;
   margin: 0 auto;
-  padding-top: var(--header-height);
+  padding-top: calc(var(--header-height) - 24px);
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(440px, .95fr);
   align-items: center;
@@ -343,7 +343,7 @@ address {
 }
 
 .hero-copy {
-  padding: 80px 0;
+  padding: 38px 0 64px;
   min-width: 0;
 }
 
@@ -376,7 +376,7 @@ address {
 
 .hero h1 {
   max-width: 760px;
-  margin: 26px 0 30px;
+  margin: 22px 0 36px;
   font-size: clamp(4rem, 7.4vw, 7.7rem);
   line-height: .91;
   letter-spacing: -.065em;
@@ -728,7 +728,7 @@ html.is-route-changing .route-view {
   overflow: hidden;
   background:
     radial-gradient(circle at 82% 30%, rgba(130, 188, 226, .24), transparent 28%),
-    linear-gradient(135deg, var(--blue-950), var(--blue-800));
+    linear-gradient(135deg, var(--blue-950), var(--blue-700));
   color: var(--white);
 }
 
@@ -773,9 +773,12 @@ html.is-route-changing .route-view {
 }
 
 .hero-kicker {
-  margin: -14px 0 24px;
-  color: var(--blue-400);
-  font-weight: 750;
+  max-width: 760px;
+  margin: 0 0 32px;
+  color: rgba(255, 255, 255, .88);
+  font-size: clamp(1rem, 1.3vw, 1.18rem);
+  font-weight: 800;
+  line-height: 1.55;
 }
 
 .home-statement {
@@ -899,7 +902,8 @@ html.is-route-changing .route-view {
   z-index: 2;
   display: grid;
   place-items: center;
-  gap: 5px;
+  align-content: center;
+  gap: 1px;
   width: 82px;
   height: 82px;
   border: 1px solid rgba(130, 188, 226, .36);
@@ -912,12 +916,14 @@ html.is-route-changing .route-view {
 
 .service-node i {
   font-size: 1.35rem;
+  line-height: 1;
 }
 
 .service-node span {
   color: rgba(255, 255, 255, .76);
   font-size: .65rem;
   font-weight: 750;
+  line-height: 1.05;
 }
 
 .service-node-study {
@@ -966,7 +972,7 @@ html.is-route-changing .route-view {
   height: 132px;
   border: 1px solid rgba(255, 255, 255, .26);
   border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, #397db0, var(--blue-900) 58%, var(--blue-950));
+  background: radial-gradient(circle at 35% 30%, var(--blue-700), var(--blue-900) 58%, var(--blue-950));
   box-shadow: 0 0 0 20px rgba(130, 188, 226, .04), 0 25px 60px rgba(0, 0, 0, .25);
   transform: translate(-50%, -50%);
 }
@@ -1106,6 +1112,109 @@ html.is-route-changing .route-view {
 
 .home-cta-grid .text-link {
   margin-top: auto;
+}
+
+.social-section {
+  background: var(--paper);
+}
+
+.social-shell {
+  display: grid;
+  grid-template-columns: minmax(260px, .62fr) minmax(0, 1.38fr);
+  gap: clamp(44px, 6vw, 90px);
+  align-items: start;
+}
+
+.social-heading h2 {
+  margin: 28px 0 0;
+  font-size: clamp(2.6rem, 5vw, 5rem);
+  line-height: 1.03;
+  letter-spacing: -.05em;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.social-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) auto;
+  gap: 18px;
+  min-height: 190px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  color: var(--ink);
+  transition: transform .35s var(--ease), border-color .35s, box-shadow .35s, background .35s;
+}
+
+.social-card:hover {
+  border-color: var(--blue-400);
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+}
+
+.social-card-featured {
+  grid-column: 1 / -1;
+  min-height: 250px;
+  border-color: rgba(130, 188, 226, .55);
+  background:
+    radial-gradient(circle at 88% 18%, rgba(130, 188, 226, .28), transparent 28%),
+    var(--blue-100);
+}
+
+.social-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--blue-200);
+  border-radius: 50%;
+  color: var(--blue-800);
+  font-size: 1.45rem;
+}
+
+.social-content {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.social-content small {
+  color: var(--blue-600);
+  font-size: .72rem;
+  font-weight: 850;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.social-content strong {
+  font-size: clamp(1.3rem, 2vw, 1.85rem);
+  line-height: 1.1;
+}
+
+.social-content span {
+  color: var(--muted);
+  font-size: .98rem;
+  line-height: 1.65;
+}
+
+.social-content b {
+  color: var(--blue-800);
+}
+
+.social-arrow {
+  color: var(--blue-600);
+  font-size: 1.1rem;
+  transition: transform .3s var(--ease);
+}
+
+.social-card:hover .social-arrow {
+  transform: translate(3px, -3px);
 }
 
 .content-split {
@@ -1260,7 +1369,7 @@ html.is-route-changing .route-view {
 
 .article-page-header {
   padding: calc(var(--header-height) + 48px) 0 90px;
-  background: linear-gradient(135deg, var(--blue-950), var(--blue-800));
+  background: linear-gradient(135deg, var(--blue-950), var(--blue-700));
   color: var(--white);
 }
 
@@ -1652,6 +1761,45 @@ html.is-route-changing .route-view {
   margin-top: 24px;
   background: var(--blue-600);
   color: var(--white);
+}
+
+.career-linkedin {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  max-width: 620px;
+  margin-top: 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--blue-200);
+  border-radius: var(--radius-sm);
+  background: var(--blue-100);
+  color: var(--blue-800);
+  font-size: .92rem;
+  font-weight: 750;
+  line-height: 1.35;
+  transition: border-color .3s, background .3s, transform .3s var(--ease);
+}
+
+.career-linkedin:hover {
+  border-color: var(--blue-600);
+  background: var(--white);
+  transform: translateY(-2px);
+}
+
+.career-linkedin i:first-child {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--blue-800);
+  color: var(--white);
+  font-size: 1.1rem;
+}
+
+.career-linkedin i:last-child {
+  color: var(--blue-600);
 }
 
 .career-areas-panel {
@@ -2507,7 +2655,7 @@ html.is-route-changing .route-view {
 .history {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(145deg, var(--blue-800), var(--blue-950));
+  background: linear-gradient(145deg, var(--blue-800), var(--blue-700));
   color: var(--white);
 }
 
@@ -2904,7 +3052,7 @@ html.is-route-changing .route-view {
   position: relative;
   overflow: hidden;
   padding: 0 0 28px;
-  background: #06172d;
+  background: var(--blue-950);
   color: var(--white);
 }
 
@@ -3466,6 +3614,7 @@ html.is-route-changing .route-view {
   .history-shell,
   .statement-grid,
   .home-service-grid,
+  .social-shell,
   .content-split,
   .full-text-card,
   .article-page-body,
@@ -3497,6 +3646,7 @@ html.is-route-changing .route-view {
   }
 
   .home-cta-grid,
+  .social-grid,
   .about-pillars .principles-grid {
     grid-template-columns: 1fr;
   }

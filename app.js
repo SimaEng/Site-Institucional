@@ -479,6 +479,44 @@ const templates = {
         </div>
       </div>
     </section>
+
+    <section class="section social-section">
+      <div class="section-shell social-shell">
+        <div class="social-heading">
+          <p class="eyebrow"><span></span>Redes sociais</p>
+          <h2>Conecte-se com a SIMA.</h2>
+        </div>
+        <div class="social-grid">
+          <a class="social-card social-card-featured" href="https://www.linkedin.com/company/sima-engenharia/" target="_blank" rel="noreferrer">
+            <span class="social-icon"><i class="ri-linkedin-fill" aria-hidden="true"></i></span>
+            <span class="social-content">
+              <small>Principal canal</small>
+              <strong>LinkedIn</strong>
+              <span>Acompanhe oportunidades, atualizações da equipe e conteúdos sobre engenharia industrial. No LinkedIn também publicamos a <b>Sima News</b>, nossa newsletter com reflexões, práticas e aprendizados do trabalho junto à indústria.</span>
+            </span>
+            <i class="ri-arrow-right-up-line social-arrow" aria-hidden="true"></i>
+          </a>
+          <a class="social-card" href="https://www.instagram.com/simaengenharia/" target="_blank" rel="noreferrer">
+            <span class="social-icon"><i class="ri-instagram-line" aria-hidden="true"></i></span>
+            <span class="social-content">
+              <small>Dia a dia</small>
+              <strong>Instagram</strong>
+              <span>Registros da cultura, pessoas e momentos que fazem parte da nossa rotina.</span>
+            </span>
+            <i class="ri-arrow-right-up-line social-arrow" aria-hidden="true"></i>
+          </a>
+          <a class="social-card" href="https://www.youtube.com/channel/UCqJuicLDC5M-QDpICi6eCPw" target="_blank" rel="noreferrer">
+            <span class="social-icon"><i class="ri-youtube-fill" aria-hidden="true"></i></span>
+            <span class="social-content">
+              <small>Vídeos</small>
+              <strong>YouTube</strong>
+              <span>Conteúdos institucionais e materiais em vídeo sobre a nossa atuação.</span>
+            </span>
+            <i class="ri-arrow-right-up-line social-arrow" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
   `,
 
   sima: () => `
@@ -714,6 +752,11 @@ const templates = {
             <p class="lead-copy">Envie seu CV para <strong>vagas@simaeng.com.br</strong>.</p>
             <p>Informe seu nome, e-mail, assunto, área de atuação e inclua uma mensagem de apresentação. O currículo deve ser anexado ao e-mail.</p>
             <a class="button career-button" href="mailto:vagas@simaeng.com.br?subject=Curr%C3%ADculo%20-%20Site%20Sima">Enviar currículo <i class="ri-send-plane-line" aria-hidden="true"></i></a>
+            <a class="career-linkedin" href="https://www.linkedin.com/company/sima-engenharia/" target="_blank" rel="noreferrer">
+              <i class="ri-linkedin-fill" aria-hidden="true"></i>
+              <span>Fique por dentro das oportunidades e novidades de carreira pelo nosso LinkedIn.</span>
+              <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+            </a>
             <p class="file-note">Formatos aceitos no site original: PDF, DOC, DOCX, PPT, PPTX, JPG, JPEG ou PNG.</p>
           </div>
           <div class="career-areas-panel reveal">
