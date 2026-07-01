@@ -134,17 +134,93 @@ const articles = [
   },
   {
     id: "seguranca",
-    title: "SEGURANÇA",
+    title: "Segurança",
     category: "seguranca",
     categoryLabel: "Segurança",
     date: "18 de outubro de 2022",
-    excerpt: "A vida como bem máximo, a diversidade como alicerce e todos cuidando de todos.",
+    tagline: "A vida como valor inegociável em cada decisão de projeto e implantação",
+    excerpt: "Como transformamos cuidado, prevenção e responsabilidade técnica em rotina de trabalho.",
     content: [
-      "A vida é um valor inegociável.",
-      "Em nossas atividades, somos responsáveis pela nossa vida e pela vida de todos que conosco convivem.",
-      "Executar nossas atividades cotidianas e profissionais sem colocar em risco a integridade física e psicológica dos envolvidos é nossa condição de prioridade máxima, pilar principal da nossa atuação.",
-      "Trabalhamos para criar, sustentar e aprimorar a cultura de segurança, entendendo que é obrigação de quem projeta ou gerencia projetos responsabilizar-se por instalações seguras tanto durante a sua construção quanto em sua operação.",
-      "A vida como bem máximo – inegociável. A diversidade como alicerce de um ambiente saudável. O bem-estar físico e psicológico como ação interativa. Todos cuidando de todos, sem deixar ninguém para trás."
+      {
+        type: "lead",
+        text: "Para a Sima, segurança não é uma etapa isolada do trabalho. Ela orienta a forma como projetamos, planejamos, acompanhamos a implantação e nos relacionamos com cada pessoa envolvida em uma atividade industrial."
+      },
+      "Em nossas atividades, somos responsáveis pela nossa vida e pela vida de todos que convivem conosco. Por isso, buscamos reduzir riscos desde a concepção das soluções, considerando pessoas, processos, instalações, máquinas, equipamentos e condições reais de operação.",
+      "Esse cuidado envolve responsabilidade técnica, cumprimento das normas aplicáveis, orientação contínua das equipes e atenção aos desvios que podem comprometer a integridade física e psicológica dos envolvidos.",
+      { type: "heading", text: "Como esse compromisso aparece na prática" },
+      {
+        type: "features",
+        items: [
+          { title: "Planejamento de segurança", text: "Estruturamos e acompanhamos práticas de segurança alinhadas ao contexto do projeto, às atividades executadas e às exigências legais aplicáveis." },
+          { title: "Prevenção antes da correção", text: "Identificamos riscos, orientamos equipes e propomos medidas preventivas ou corretivas antes que uma situação insegura se transforme em ocorrência." },
+          { title: "Capacitação e conscientização", text: "Valorizamos treinamentos, campanhas, palestras e conversas de campo para manter a segurança presente na rotina, e não apenas nos documentos." },
+          { title: "Cuidado coletivo", text: "Segurança é responsabilidade de todos. Trabalhamos para fortalecer uma cultura em que cada pessoa observa, alerta, corrige e protege." }
+        ]
+      },
+      { type: "statement", text: "A vida como bem máximo. O bem-estar físico e psicológico como compromisso coletivo. Todos cuidando de todos, sem deixar ninguém para trás." }
+    ]
+  },
+  {
+    id: "tecnico-seguranca-trabalho",
+    title: "Técnico de Segurança do Trabalho",
+    category: "seguranca",
+    categoryLabel: "Técnico de Segurança do Trabalho · Segurança",
+    date: "Conteúdo institucional",
+    tagline: "Presença técnica para orientar, prevenir e manter a segurança viva no campo",
+    excerpt: "O profissional que aproxima normas, pessoas e rotina operacional para prevenir acidentes.",
+    content: [
+      {
+        type: "lead",
+        text: "O <strong>Técnico de Segurança do Trabalho</strong> atua próximo das equipes para transformar requisitos de segurança em ações claras, compreensíveis e aplicáveis no dia a dia do projeto."
+      },
+      "Sua presença ajuda clientes, funcionários, contratadas e visitantes a entenderem os riscos existentes, adotarem condutas seguras e manterem as atividades em conformidade com os procedimentos de Qualidade, Saúde, Segurança do Trabalho e Meio Ambiente.",
+      "Mais do que fiscalizar, esse profissional orienta, acompanha e apoia a tomada de decisão em campo, contribuindo para que a prevenção faça parte da rotina operacional.",
+      { type: "heading", text: "Principais frentes de atuação" },
+      {
+        type: "phases",
+        items: [
+          {
+            icon: "01",
+            title: "Orientar pessoas",
+            points: [
+              "Explicar riscos existentes nas atividades",
+              "Indicar ações preventivas e corretivas",
+              "Apoiar equipes próprias, contratadas e visitantes"
+            ]
+          },
+          {
+            icon: "02",
+            title: "Acompanhar programas",
+            points: [
+              "Monitorar programas de prevenção de saúde e segurança",
+              "Divulgar normas, procedimentos e boas práticas",
+              "Promover campanhas, palestras e treinamentos"
+            ]
+          },
+          {
+            icon: "03",
+            title: "Cuidar do campo",
+            points: [
+              "Inspecionar áreas, fluxos e condições de trabalho",
+              "Verificar aderência a projetos, reformas e ampliações",
+              "Propor melhorias quando forem identificados desvios"
+            ]
+          },
+          {
+            icon: "04",
+            title: "Controlar proteção",
+            points: [
+              "Orientar o uso correto de EPIs e uniformes",
+              "Acompanhar distribuição, troca e conservação dos equipamentos",
+              "Registrar e tratar condições de não conformidade"
+            ]
+          }
+        ]
+      },
+      { type: "heading", text: "O valor para o cliente" },
+      "Com o apoio do Técnico de Segurança do Trabalho, a segurança deixa de depender apenas de regras escritas e passa a ser acompanhada de perto, com linguagem acessível, presença em campo e resposta rápida às situações do projeto.",
+      "Isso reduz exposição a riscos, aumenta a previsibilidade das atividades e reforça a confiança entre cliente, Sima, equipes executoras e demais envolvidos.",
+      { type: "statement", text: "Segurança bem conduzida é aquela que todos entendem, praticam e reconhecem como parte do trabalho." }
     ]
   },
   {
@@ -632,10 +708,28 @@ const templates = {
               <div class="approach-content">
                 <span>Segurança</span>
                 <h3>A vida é um valor inegociável.</h3>
-                <p>Instalações seguras na construção e na operação. Bem-estar físico e psicológico como compromisso coletivo.</p>
+                <p>Instalações seguras na construção e na operação, com orientação técnica, prevenção em campo e cuidado coletivo.</p>
                 <div class="approach-links">
                   <a href="/Site-Institucional/artigo/seguranca">Conheça nossa visão sobre segurança <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                  <a href="/Site-Institucional/artigo/tecnico-seguranca-trabalho">Técnico de Segurança do Trabalho <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
                   <a href="/Site-Institucional/artigo/pausa-seguranca">Veja a Pausa Para Segurança <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                </div>
+                <div class="approach-care-figure" role="img" aria-label="Cuidado coletivo em segurança">
+                  <svg viewBox="0 0 360 260" aria-hidden="true" focusable="false">
+                    <path class="care-path care-path-two" d="M96 198 C132 178 158 176 180 186 C202 176 228 178 264 198"></path>
+                    <g class="care-person care-person-one">
+                      <circle cx="118" cy="126" r="15"></circle>
+                      <path d="M92 178 C98 149 138 149 144 178"></path>
+                    </g>
+                    <g class="care-person care-person-two">
+                      <circle cx="180" cy="108" r="17"></circle>
+                      <path d="M150 171 C158 139 202 139 210 171"></path>
+                    </g>
+                    <g class="care-person care-person-three">
+                      <circle cx="242" cy="126" r="15"></circle>
+                      <path d="M216 178 C222 149 262 149 268 178"></path>
+                    </g>
+                  </svg>
                 </div>
               </div>
             </article>
@@ -667,6 +761,52 @@ const templates = {
                 <a href="/Site-Institucional/artigo/alinhamento-de-percepcoes">Entenda o Alinhamento de Percepções <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+      <section class="section safety-work">
+        <div class="section-shell">
+          <div class="safety-work-header reveal">
+            <p class="eyebrow eyebrow-light"><span></span>Prevenção acompanhada de perto</p>
+            <h2>Técnico de Segurança no Trabalho</h2>
+            <p>Nos projetos e implantações, a segurança precisa estar presente no planejamento, na rotina de campo e na comunicação com todos os envolvidos. O Técnico de Segurança do Trabalho aproxima normas, pessoas e execução para que o cuidado seja entendido e praticado.</p>
+            <div class="safety-work-figure" role="img" aria-label="Ícone de segurança do trabalho">
+              <div class="safety-figure-grid"></div>
+              <svg class="safety-emblem" viewBox="0 0 360 360" aria-hidden="true" focusable="false">
+                <path class="safety-emblem-shield" d="M180 42 L276 78 V158 C276 229 236 281 180 315 C124 281 84 229 84 158 V78 Z"></path>
+                <path class="safety-emblem-helmet" d="M111 166 C116 118 144 90 180 90 C216 90 244 118 249 166"></path>
+                <path class="safety-emblem-helmet-brim" d="M100 166 H260"></path>
+                <path class="safety-emblem-helmet-line" d="M180 92 V151"></path>
+                <path class="safety-emblem-check" d="M139 206 L170 235 L226 177"></path>
+              </svg>
+              <span class="safety-emblem-glow"></span>
+            </div>
+          </div>
+          <div class="safety-work-grid">
+            <article class="safety-work-card reveal">
+              <i class="ri-user-voice-line" aria-hidden="true"></i>
+              <h3>Orientar equipes</h3>
+              <p>Explicar riscos, esclarecer procedimentos e apoiar funcionários, contratadas e visitantes antes e durante as atividades.</p>
+            </article>
+            <article class="safety-work-card reveal">
+              <i class="ri-calendar-check-line" aria-hidden="true"></i>
+              <h3>Acompanhar programas</h3>
+              <p>Monitorar ações de prevenção, divulgar normas e reforçar campanhas, palestras e treinamentos de segurança.</p>
+            </article>
+            <article class="safety-work-card reveal">
+              <i class="ri-road-map-line" aria-hidden="true"></i>
+              <h3>Cuidar do campo</h3>
+              <p>Inspecionar áreas, fluxos, ampliações e reformas para identificar desvios e propor medidas preventivas ou corretivas.</p>
+            </article>
+            <article class="safety-work-card reveal">
+              <i class="ri-shield-check-line" aria-hidden="true"></i>
+              <h3>Controlar proteção</h3>
+              <p>Orientar o uso correto de EPIs e uniformes, acompanhar distribuição, troca e conservação dos equipamentos.</p>
+            </article>
+          </div>
+          <div class="safety-work-footer reveal">
+            <strong>Para o cliente, isso significa menos exposição a riscos, mais previsibilidade e uma rotina de obra mais consciente.</strong>
+            <a class="button" href="/Site-Institucional/artigo/tecnico-seguranca-trabalho">Ler o aprofundamento <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
           </div>
         </div>
       </section>
@@ -1083,7 +1223,7 @@ function getPolygonPoints(cx, cy, r, numSides, totalPoints = 120, angleOffset = 
       y: cy + r * Math.sin(angle)
     });
   }
-  
+
   const points = [];
   const pointsPerSide = totalPoints / numSides;
   for (let i = 0; i < numSides; i++) {
@@ -1123,7 +1263,7 @@ class GeometricAnimation {
     }
     this.ctx = this.canvas.getContext('2d');
     this.requestId = null;
-    
+
     // Animation state
     this.shapes = [3, 4, 5, 6, 8, 12, 'circle'];
     this.currentShapeIndex = 0;
@@ -1133,21 +1273,21 @@ class GeometricAnimation {
     this.shapeHoldDuration = 180;
     this.holdTimer = 0;
     this.angle = 0;
-    
+
     // Particles
     this.particles = [];
     this.initParticles();
-    
+
     // Resize & Loop
     this.resize = this.resize.bind(this);
     this.loop = this.loop.bind(this);
-    
+
     window.addEventListener('resize', this.resize);
     this.resize();
-    
+
     this.requestId = requestAnimationFrame(this.loop);
   }
-  
+
   initParticles() {
     this.particles = [];
     for (let i = 0; i < 20; i++) {
@@ -1161,15 +1301,15 @@ class GeometricAnimation {
       });
     }
   }
-  
+
   resize() {
     const displayWidth = this.container.clientWidth;
     const displayHeight = this.container.clientHeight;
     if (displayWidth === 0 || displayHeight === 0) return;
-    
+
     const targetWidth = Math.floor(displayWidth * window.devicePixelRatio);
     const targetHeight = Math.floor(displayHeight * window.devicePixelRatio);
-    
+
     if (this.canvas.width !== targetWidth || this.canvas.height !== targetHeight) {
       this.canvas.width = targetWidth;
       this.canvas.height = targetHeight;
@@ -1179,14 +1319,14 @@ class GeometricAnimation {
       this.height = displayHeight;
     }
   }
-  
+
   destroy() {
     if (this.requestId) {
       cancelAnimationFrame(this.requestId);
     }
     window.removeEventListener('resize', this.resize);
   }
-  
+
   getShapePoints(shapeIndex, cx, cy, r, angle) {
     const type = this.shapes[shapeIndex];
     if (type === 'circle') {
@@ -1195,14 +1335,14 @@ class GeometricAnimation {
       return getPolygonPoints(cx, cy, r, type, 120, angle);
     }
   }
-  
+
   loop() {
     this.resize();
     this.update();
     this.draw();
     this.requestId = requestAnimationFrame(this.loop);
   }
-  
+
   update() {
     this.angle += 0.002;
     if (this.holdTimer < this.shapeHoldDuration) {
@@ -1216,7 +1356,7 @@ class GeometricAnimation {
         this.nextShapeIndex = (this.nextShapeIndex + 1) % this.shapes.length;
       }
     }
-    
+
     this.particles.forEach(p => {
       p.x += p.vx;
       p.y += p.vy;
@@ -1224,19 +1364,19 @@ class GeometricAnimation {
       if (p.y < 0 || p.y > 1) p.vy *= -1;
     });
   }
-  
+
   draw() {
     const ctx = this.ctx;
     const w = this.width;
     const h = this.height;
     if (!w || !h) return;
-    
+
     ctx.clearRect(0, 0, w, h);
-    
+
     const cx = w / 2;
     const cy = h / 2;
     const r = Math.min(w, h) * 0.32;
-    
+
     // Grid Background
     ctx.strokeStyle = 'rgba(130, 188, 226, 0.03)';
     ctx.lineWidth = 1;
@@ -1253,14 +1393,14 @@ class GeometricAnimation {
       ctx.lineTo(w, y);
       ctx.stroke();
     }
-    
+
     // Crosshair at center
     ctx.strokeStyle = 'rgba(130, 188, 226, 0.1)';
     ctx.beginPath();
     ctx.moveTo(cx - 15, cy); ctx.lineTo(cx + 15, cy);
     ctx.moveTo(cx, cy - 15); ctx.lineTo(cx, cy + 15);
     ctx.stroke();
-    
+
     // Particles
     this.particles.forEach(p => {
       ctx.fillStyle = `rgba(130, 188, 226, ${p.alpha})`;
@@ -1268,21 +1408,21 @@ class GeometricAnimation {
       ctx.arc(p.x * w, p.y * h, p.size, 0, Math.PI * 2);
       ctx.fill();
     });
-    
+
     // Rotating outer ring (dashed)
     ctx.strokeStyle = 'rgba(130, 188, 226, 0.08)';
     ctx.lineWidth = 1;
     ctx.beginPath();
     ctx.arc(cx, cy, r * 1.25, 0, Math.PI * 2);
     ctx.stroke();
-    
+
     ctx.strokeStyle = 'rgba(130, 188, 226, 0.16)';
     ctx.setLineDash([4, 10]);
     ctx.beginPath();
     ctx.arc(cx, cy, r * 1.25, -this.angle, Math.PI * 2 - this.angle);
     ctx.stroke();
     ctx.setLineDash([]);
-    
+
     // Inner/Outer helper dots
     ctx.fillStyle = 'rgba(130, 188, 226, 0.3)';
     for (let i = 0; i < 4; i++) {
@@ -1291,14 +1431,14 @@ class GeometricAnimation {
       ctx.arc(cx + r * 1.25 * Math.cos(a), cy + r * 1.25 * Math.sin(a), 2, 0, Math.PI * 2);
       ctx.fill();
     }
-    
+
     // Get interpolated points
     const ptsA = this.getShapePoints(this.currentShapeIndex, cx, cy, r, this.angle);
     const ptsB = this.getShapePoints(this.nextShapeIndex, cx, cy, r, this.angle);
-    
+
     const ease = t => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
     const t = ease(this.transitionProgress);
-    
+
     const currentPts = [];
     for (let i = 0; i < 120; i++) {
       currentPts.push({
@@ -1306,7 +1446,7 @@ class GeometricAnimation {
         y: ptsA[i].y * (1 - t) + ptsB[i].y * t
       });
     }
-    
+
     // Main morphing shape outline (glowing)
     ctx.shadowBlur = 10;
     ctx.shadowColor = 'rgba(130, 188, 226, 0.5)';
@@ -1319,12 +1459,12 @@ class GeometricAnimation {
     }
     ctx.closePath();
     ctx.stroke();
-    
+
     // Soft transparent shape fill
     ctx.shadowBlur = 0;
     ctx.fillStyle = 'rgba(21, 65, 128, 0.12)';
     ctx.fill();
-    
+
     // Draw vertex nodes
     ctx.fillStyle = '#ffffff';
     ctx.shadowBlur = 6;
@@ -1338,7 +1478,7 @@ class GeometricAnimation {
       ctx.fill();
     }
     ctx.shadowBlur = 0;
-    
+
     // Draw lines connecting nodes to center
     ctx.strokeStyle = 'rgba(130, 188, 226, 0.08)';
     ctx.lineWidth = 1;
@@ -1349,7 +1489,7 @@ class GeometricAnimation {
       ctx.lineTo(currentPts[idx].x, currentPts[idx].y);
       ctx.stroke();
     }
-    
+
 
   }
 }
