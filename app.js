@@ -539,6 +539,53 @@ const templates = {
       </div>
     </section>
 
+    <section class="section safety-work">
+      <div class="section-shell">
+        <div class="safety-work-header reveal">
+          <p class="eyebrow eyebrow-light"><span></span>Prevenção acompanhada de perto</p>
+          <h2>Técnico de Segurança no Trabalho</h2>
+          <p>Nos projetos e implantações, a segurança precisa estar presente no planejamento, na rotina de campo e na comunicação com todos os envolvidos. O Técnico de Segurança do Trabalho aproxima normas, pessoas e execução para que o cuidado seja entendido e praticado.</p>
+          <div class="safety-work-figure" role="img" aria-label="Ícone de segurança do trabalho">
+            <div class="safety-figure-grid"></div>
+            <svg class="safety-emblem" viewBox="0 0 360 360" aria-hidden="true" focusable="false">
+              <path class="safety-emblem-shield" d="M180 42 L276 78 V158 C276 229 236 281 180 315 C124 281 84 229 84 158 V78 Z"></path>
+              <path class="safety-emblem-helmet" d="M111 166 C116 118 144 90 180 90 C216 90 244 118 249 166"></path>
+              <path class="safety-emblem-helmet-brim" d="M100 166 H260"></path>
+              <path class="safety-emblem-helmet-line" d="M180 92 V151"></path>
+              <path class="safety-emblem-check" d="M139 206 L170 235 L226 177"></path>
+            </svg>
+            <span class="safety-emblem-glow"></span>
+          </div>
+        </div>
+        <div class="safety-work-grid">
+          <article class="safety-work-card reveal">
+            <i class="ri-user-voice-line" aria-hidden="true"></i>
+            <h3>Orientar equipes</h3>
+            <p>Explicar riscos, esclarecer procedimentos e apoiar funcionários, contratadas e visitantes antes e durante as atividades.</p>
+          </article>
+          <article class="safety-work-card reveal">
+            <i class="ri-calendar-check-line" aria-hidden="true"></i>
+            <h3>Acompanhar programas</h3>
+            <p>Monitorar ações de prevenção, divulgar normas e reforçar campanhas, palestras e treinamentos de segurança.</p>
+          </article>
+          <article class="safety-work-card reveal">
+            <i class="ri-road-map-line" aria-hidden="true"></i>
+            <h3>Cuidar do campo</h3>
+            <p>Inspecionar áreas, fluxos, ampliações e reformas para identificar desvios e propor medidas preventivas ou corretivas.</p>
+          </article>
+          <article class="safety-work-card reveal">
+            <i class="ri-shield-check-line" aria-hidden="true"></i>
+            <h3>Controlar proteção</h3>
+            <p>Orientar o uso correto de EPIs e uniformes, acompanhar distribuição, troca e conservação dos equipamentos.</p>
+          </article>
+        </div>
+        <div class="safety-work-footer reveal">
+          <strong>Para o cliente, isso significa menos exposição a riscos, mais previsibilidade e uma rotina de obra mais consciente.</strong>
+          <a class="button" href="/Site-Institucional/artigo/tecnico-seguranca-trabalho">Ler o aprofundamento <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
     <section class="section home-cta">
       <div class="section-shell home-cta-grid">
         <div class="reveal">
@@ -761,52 +808,6 @@ const templates = {
                 <a href="/Site-Institucional/artigo/alinhamento-de-percepcoes">Entenda o Alinhamento de Percepções <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
               </div>
             </article>
-          </div>
-        </div>
-      </section>
-      <section class="section safety-work">
-        <div class="section-shell">
-          <div class="safety-work-header reveal">
-            <p class="eyebrow eyebrow-light"><span></span>Prevenção acompanhada de perto</p>
-            <h2>Técnico de Segurança no Trabalho</h2>
-            <p>Nos projetos e implantações, a segurança precisa estar presente no planejamento, na rotina de campo e na comunicação com todos os envolvidos. O Técnico de Segurança do Trabalho aproxima normas, pessoas e execução para que o cuidado seja entendido e praticado.</p>
-            <div class="safety-work-figure" role="img" aria-label="Ícone de segurança do trabalho">
-              <div class="safety-figure-grid"></div>
-              <svg class="safety-emblem" viewBox="0 0 360 360" aria-hidden="true" focusable="false">
-                <path class="safety-emblem-shield" d="M180 42 L276 78 V158 C276 229 236 281 180 315 C124 281 84 229 84 158 V78 Z"></path>
-                <path class="safety-emblem-helmet" d="M111 166 C116 118 144 90 180 90 C216 90 244 118 249 166"></path>
-                <path class="safety-emblem-helmet-brim" d="M100 166 H260"></path>
-                <path class="safety-emblem-helmet-line" d="M180 92 V151"></path>
-                <path class="safety-emblem-check" d="M139 206 L170 235 L226 177"></path>
-              </svg>
-              <span class="safety-emblem-glow"></span>
-            </div>
-          </div>
-          <div class="safety-work-grid">
-            <article class="safety-work-card reveal">
-              <i class="ri-user-voice-line" aria-hidden="true"></i>
-              <h3>Orientar equipes</h3>
-              <p>Explicar riscos, esclarecer procedimentos e apoiar funcionários, contratadas e visitantes antes e durante as atividades.</p>
-            </article>
-            <article class="safety-work-card reveal">
-              <i class="ri-calendar-check-line" aria-hidden="true"></i>
-              <h3>Acompanhar programas</h3>
-              <p>Monitorar ações de prevenção, divulgar normas e reforçar campanhas, palestras e treinamentos de segurança.</p>
-            </article>
-            <article class="safety-work-card reveal">
-              <i class="ri-road-map-line" aria-hidden="true"></i>
-              <h3>Cuidar do campo</h3>
-              <p>Inspecionar áreas, fluxos, ampliações e reformas para identificar desvios e propor medidas preventivas ou corretivas.</p>
-            </article>
-            <article class="safety-work-card reveal">
-              <i class="ri-shield-check-line" aria-hidden="true"></i>
-              <h3>Controlar proteção</h3>
-              <p>Orientar o uso correto de EPIs e uniformes, acompanhar distribuição, troca e conservação dos equipamentos.</p>
-            </article>
-          </div>
-          <div class="safety-work-footer reveal">
-            <strong>Para o cliente, isso significa menos exposição a riscos, mais previsibilidade e uma rotina de obra mais consciente.</strong>
-            <a class="button" href="/Site-Institucional/artigo/tecnico-seguranca-trabalho">Ler o aprofundamento <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
           </div>
         </div>
       </section>
