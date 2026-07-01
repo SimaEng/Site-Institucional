@@ -1115,7 +1115,38 @@ const setTitle = (route, article) => {
     contato: "Fale conosco — Sima Engenharia",
     carreiras: "Trabalhe conosco — Sima Engenharia"
   };
-  document.title = article ? `${article.title} — Sima Engenharia` : names[route] || names.inicio;
+
+  const descriptions = {
+    inicio: "Empresa de engenharia industrial especializada em engenharia de projetos industriais, engenharia básica, detalhamento e gerenciamento de implantação.",
+    sima: "Conheça a história e os princípios da Sima Engenharia, atuando desde 1991 com foco em engenharia necessária, laços de confiança e relacionamento humano.",
+    atuacao: "Desenvolvimento de projetos industriais multidisciplinares, viabilidade técnica-econômica, engenharia básica e detalhada e gerenciamento de implantação.",
+    "solucoes-digitais": "Soluções digitais inteligentes desenvolvidas para otimizar o planejamento, controle físico-financeiro e cronograma de projetos industriais.",
+    "nossa-cultura": "Acreditamos em relações de confiança, segurança em campo, escuta ativa e no desenvolvimento integral dos profissionais da nossa equipe.",
+    conteudos: "Artigos, publicações e reflexões da Sima Engenharia sobre chão de fábrica, engenharia necessária, gestão de projetos e cultura industrial.",
+    contato: "Entre em contato com a Sima Engenharia para falar sobre seu projeto industrial, solicitar propostas ou agendar uma reunião comercial.",
+    carreiras: "Venha fazer parte da nossa equipe. Oportunidades para profissionais de engenharia industrial e gerenciamento de implantações."
+  };
+
+  const title = article ? `${article.title} — Sima Engenharia` : names[route] || names.inicio;
+  const description = article ? (article.excerpt || article.tagline || "") : descriptions[route] || descriptions.inicio;
+  const url = article ? `https://www.simaeng.com.br/artigo/${article.id}` : `https://www.simaeng.com.br/${route === "inicio" ? "" : route}`;
+
+  document.title = title;
+
+  const descMeta = document.querySelector('meta[name="description"]');
+  if (descMeta) descMeta.setAttribute("content", description);
+
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle) ogTitle.setAttribute("content", title);
+
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogDesc) ogDesc.setAttribute("content", description);
+
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  if (ogUrl) ogUrl.setAttribute("content", url);
+
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.setAttribute("href", url);
 };
 
 const closeMenu = () => {
