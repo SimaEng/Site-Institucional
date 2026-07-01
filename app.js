@@ -542,9 +542,9 @@ const templates = {
     <section class="section safety-work">
       <div class="section-shell">
         <div class="safety-work-header reveal">
-          <p class="eyebrow eyebrow-light"><span></span>Prevenção acompanhada de perto</p>
+          <p class="eyebrow eyebrow-light"><span></span>Nossos serviços de campo</p>
           <h2>Técnico de Segurança no Trabalho</h2>
-          <p>Nos projetos e implantações, a segurança precisa estar presente no planejamento, na rotina de campo e na comunicação com todos os envolvidos. O Técnico de Segurança do Trabalho aproxima normas, pessoas e execução para que o cuidado seja entendido e praticado.</p>
+          <p>Como parte de nossas soluções, a Sima oferece a atuação de Técnicos de Segurança do Trabalho integrados aos projetos e implantações. Nossos profissionais acompanham o planejamento, orientam frentes de campo e alinham a execução técnica para que a segurança seja vivenciada na prática.</p>
           <div class="safety-work-figure" role="img" aria-label="Ícone de segurança do trabalho">
             <div class="safety-figure-grid"></div>
             <svg class="safety-emblem" viewBox="0 0 360 360" aria-hidden="true" focusable="false">
